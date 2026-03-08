@@ -7,6 +7,7 @@ interface BeforeAfterSliderProps {
   beforeLabel?: string;
   afterLabel?: string;
   className?: string;
+  imageClassName?: string;
 }
 
 export function BeforeAfterSlider({ 
@@ -14,7 +15,8 @@ export function BeforeAfterSlider({
   afterImage, 
   beforeLabel = "Before", 
   afterLabel = "After",
-  className 
+  className,
+  imageClassName
 }: BeforeAfterSliderProps) {
   const [position, setPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
@@ -52,7 +54,7 @@ export function BeforeAfterSlider({
       <img 
         src={afterImage} 
         alt="After Renovation" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className={cn("absolute inset-0 w-full h-full object-cover", imageClassName)}
       />
       <div className="absolute bottom-6 right-6 px-4 py-2 bg-secondary text-primary border border-secondary text-[10px] uppercase tracking-widest font-bold z-0">
         {afterLabel}
@@ -67,7 +69,7 @@ export function BeforeAfterSlider({
           <img 
             src={beforeImage} 
             alt="Before Renovation" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className={cn("absolute inset-0 w-full h-full object-cover", imageClassName)}
           />
         </div>
         <div className="absolute bottom-6 left-6 px-4 py-2 bg-primary text-white border border-white/10 text-[10px] uppercase tracking-widest font-bold whitespace-nowrap">

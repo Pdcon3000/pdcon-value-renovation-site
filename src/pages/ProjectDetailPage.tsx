@@ -88,6 +88,7 @@ export function ProjectDetailPage() {
                     beforeLabel="Original State"
                     afterLabel="Strategic Transformation"
                     className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm border border-muted"
+                    imageClassName={project.id === 'berwick-refresh' ? "scale-125" : ""}
                   />
                 </div>
               ))
@@ -103,6 +104,7 @@ export function ProjectDetailPage() {
                   beforeLabel="Original State"
                   afterLabel="PDCON Strategic Upgrade"
                   className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm"
+                  imageClassName={project.id === 'berwick-refresh' ? "scale-125" : ""}
                 />
               </div>
             )}
