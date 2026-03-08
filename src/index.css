@@ -15,26 +15,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 218 41% 18%;
     
-    --primary: 220 45% 10%; /* Deeper Navy */
+    --primary: 222 47% 11%; /* Premium Deep Navy */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 35 30% 60%; /* Subtle Gold/Bronze */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 43 35% 55%; /* Refined Muted Gold */
+    --secondary-foreground: 222 47% 11%;
     
-    --muted: 210 20% 98%;
-    --muted-foreground: 210 10% 40%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
     
-    --accent: 35 30% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 35% 55%;
+    --accent-foreground: 222 47% 11%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 15% 90%;
-    --input: 210 15% 90%;
-    --ring: 220 45% 10%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 11%;
     
-    --radius: 0rem; /* Minimalist sharp edges */
+    --radius: 0.125rem; /* Very subtle rounding */
 
     --font-sans: 'Inter', sans-serif;
     --font-heading: 'Playfair Display', serif;

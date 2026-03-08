@@ -59,16 +59,16 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className={cn(
-              "text-2xl font-display font-bold tracking-tighter transition-colors italic",
+              "text-3xl font-display font-bold tracking-tighter transition-colors italic",
               useWhiteText ? "text-white" : "text-primary"
             )}>
               PDCON
             </span>
             <span className={cn(
-              "text-[9px] uppercase tracking-[0.3em] font-bold transition-colors opacity-60",
+              "text-[10px] uppercase tracking-[0.4em] font-bold transition-colors opacity-80",
               useWhiteText ? "text-secondary" : "text-secondary"
             )}>
-              Property Value Improvement Specialists
+              Strategic Property Value Improvement
             </span>
           </div>
         </Link>

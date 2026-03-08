@@ -109,29 +109,29 @@ export function ImprovementsPage() {
         <Container clean className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div className="flex flex-col gap-8">
             <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Transformation Profile</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight italic">Devon Meadows Rural Modernisation</h2>
+            <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight italic">Berwick Property Refresh</h2>
             <p className="text-xl text-white/60 leading-relaxed">
-              A large rural property that lacked a clear architectural identity. Through strategic painting, custom joinery, and a complete lighting plan, we created a sophisticated "Modern Coastal" vibe that resonated with premium buyers.
+              A targeted cosmetic upgrade strategy delivered with a renovation budget of $38,000. The improvements focused on high-impact visual areas to significantly improve the property's presentation and buyer appeal.
             </p>
             <div className="flex gap-12">
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-secondary">350%</span>
-                <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">ROI on Improvements</span>
+                <span className="text-3xl font-bold text-secondary">$83,000+</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">Value Achieved</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-secondary">14 Days</span>
-                <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">Renovation Timeline</span>
+                <span className="text-3xl font-bold text-secondary">21 Days</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">Refresh Timeline</span>
               </div>
             </div>
             <Button asChild variant="outline" className="border-white/20 text-white hover:bg-white/10 rounded-none h-14 w-fit">
-              <Link to="/projects/devon-meadows-transformation">View Full Case Study</Link>
+              <Link to="/projects/berwick-refresh">View Case Study</Link>
             </Button>
           </div>
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" 
-                alt="Devon Meadows Project" 
+                alt="Berwick Project" 
                 className="w-full h-full object-cover"
               />
             </div>

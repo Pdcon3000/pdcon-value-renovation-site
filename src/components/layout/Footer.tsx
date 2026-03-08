@@ -37,11 +37,11 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-3xl font-display font-bold tracking-tighter italic">PDCON</span>
-                <span className="text-[9px] uppercase tracking-[0.3em] font-bold text-secondary">Property Value Improvement Specialists</span>
+                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-secondary">Strategic Property Value Improvement</span>
               </div>
             </Link>
             <p className="text-white/50 leading-relaxed max-w-sm font-light italic">
-              Melbourne's leading infrastructure for strategic property value improvement. We reposition residential assets for the market through professional transformation and premium presentation. Est. 2013.
+              Melbourne's leading specialists for strategic property value improvement. We reposition residential assets for the market through professional transformation and premium presentation. Est. 2013.
             </p>
             <div className="flex gap-4">
               {[Instagram, Linkedin, Facebook].map((Icon, i) => (
