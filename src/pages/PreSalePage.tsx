@@ -121,7 +121,7 @@ export function PreSalePage() {
             <div className="flex flex-col gap-4">
               <h4 className="text-lg font-bold font-heading italic">The Outcome</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Achieved a significant value increase of $355,000, delivering a high-end presentation that exceeded all market expectations.
+                Achieved a significant value increase of $455,000, delivering a high-end presentation that exceeded all market expectations.
               </p>
             </div>
             <div className="flex flex-col gap-6 justify-center">

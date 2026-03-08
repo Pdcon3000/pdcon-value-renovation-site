@@ -13,7 +13,7 @@ export const projects = [
     title: 'Berwick Property Transformation',
     suburb: 'Berwick',
     type: 'Strategic Pre-Sale Renovation',
-    roi: '433%',
+    roi: '433%', // $455k increase on $105k investment
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692',
     description: 'This Berwick property underwent a full strategic pre-sale renovation designed to reposition the home for the market and significantly improve buyer appeal.',
     overview: 'This project involved a full strategic renovation of a residential property in Berwick, Victoria. The home had strong underlying value but required substantial upgrades to align with modern buyer expectations and maximise its market potential.',
@@ -32,10 +32,10 @@ export const projects = [
     projectDuration: 'The renovation was completed over a 14-week period including planning, renovation works and final presentation improvements.',
     result: 'Despite the challenging market conditions, the final result exceeded expectations. The renovation significantly improved the property\'s presentation and market positioning, resulting in a stronger sale outcome than originally anticipated.',
     metrics: [
-      { label: 'Before renovation value', value: '$1,600,000' },
-      { label: 'Renovation investment', value: '$250,000' },
+      { label: 'Estimated value before renovation', value: '$1,650,000' },
+      { label: 'Renovation investment', value: '$105,000' },
       { label: 'Sale price achieved', value: '$2,105,000' },
-      { label: 'Value increase', value: '$355,000', highlight: true }
+      { label: 'Value increase', value: '$455,000', highlight: true }
     ],
     gallery: [
       {

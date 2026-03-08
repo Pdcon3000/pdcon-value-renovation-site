@@ -18,12 +18,15 @@ export function HomePage() {
     setIsSubmitting(true);
     
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
 
     try {
       await blink.db.consultations.create({
-        ...data,
+        name: formData.get('name') as string,
+        phone: formData.get('phone') as string || '',
+        email: formData.get('email') as string,
+        suburb: formData.get('suburb') as string,
         type: 'assessment',
+        message: formData.get('value') ? `Estimated value: ${formData.get('value')}` : '',
         status: 'new',
         createdAt: new Date().toISOString()
       });
@@ -156,10 +159,10 @@ export function HomePage() {
 
               <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10 overflow-hidden">
                 {[
-                  { label: "Before renovation value", value: "$1,600,000" },
-                  { label: "Renovation investment", value: "$250,000" },
+                  { label: "Estimated value before renovation", value: "$1,650,000" },
+                  { label: "Renovation investment", value: "$105,000" },
                   { label: "Sale price achieved", value: "$2,105,000" },
-                  { label: "Value increase", value: "$355,000", highlight: true }
+                  { label: "Value increase", value: "$455,000", highlight: true }
                 ].map((stat, i) => (
                   <div key={i} className="bg-primary p-10 flex flex-col gap-3">
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/40">{stat.label}</span>
@@ -170,7 +173,7 @@ export function HomePage() {
 
               <div className="flex flex-col gap-6 items-start">
                 <p className="text-5xl md:text-7xl font-display font-bold text-secondary tracking-tight">
-                  $355,000 <span className="text-2xl md:text-3xl uppercase tracking-widest ml-2">Value Increase</span>
+                  $455,000 <span className="text-2xl md:text-3xl uppercase tracking-widest ml-2">Value Increase</span>
                 </p>
                 <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 text-lg transition-all duration-500">
                   <Link to="/projects/berwick-transformation">View Full Case Study</Link>
@@ -252,12 +255,12 @@ export function HomePage() {
                 
                 <div className="grid grid-cols-1 gap-6 py-8 border-y border-muted">
                   <div className="flex justify-between items-end border-b border-muted pb-4">
-                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Before renovation value</span>
-                    <span className="text-2xl font-display font-bold text-primary">$1,600,000</span>
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Estimated value before renovation</span>
+                    <span className="text-2xl font-display font-bold text-primary">$1,650,000</span>
                   </div>
                   <div className="flex justify-between items-end border-b border-muted pb-4">
                     <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Renovation investment</span>
-                    <span className="text-2xl font-display font-bold text-primary">$250,000</span>
+                    <span className="text-2xl font-display font-bold text-primary">$105,000</span>
                   </div>
                   <div className="flex justify-between items-end border-b border-muted pb-4">
                     <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Sale price achieved</span>
@@ -265,12 +268,12 @@ export function HomePage() {
                   </div>
                   <div className="flex justify-between items-end pt-4">
                     <span className="text-xs uppercase tracking-widest text-secondary font-bold">Value increase</span>
-                    <span className="text-4xl font-display font-bold text-secondary">$355,000</span>
+                    <span className="text-4xl font-display font-bold text-secondary">$455,000</span>
                   </div>
                 </div>
 
                 <div className="bg-primary text-white p-8 border-l-4 border-secondary shadow-xl">
-                  <p className="text-secondary font-display font-bold text-3xl italic tracking-tight">$355,000 VALUE INCREASE</p>
+                  <p className="text-secondary font-display font-bold text-3xl italic tracking-tight">$455,000 VALUE INCREASE</p>
                 </div>
 
                 <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300 w-fit">
@@ -524,9 +527,15 @@ export function HomePage() {
                   <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Full Name</label>
                   <Input name="name" required placeholder="Name" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
                 </div>
-                <div className="flex flex-col gap-3">
-                  <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Email Address</label>
-                  <Input name="email" type="email" required placeholder="email@address.com" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  <div className="flex flex-col gap-3">
+                    <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Email Address</label>
+                    <Input name="email" type="email" required placeholder="email@address.com" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Phone Number</label>
+                    <Input name="phone" required placeholder="0400 000 000" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
+                  </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="flex flex-col gap-3">
@@ -728,9 +737,15 @@ export function HomePage() {
                   <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Full Name</label>
                   <Input name="name" required placeholder="Name" className="rounded-none border-muted h-12" />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Email Address</label>
-                  <Input name="email" type="email" required placeholder="email@address.com" className="rounded-none border-muted h-12" />
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Email Address</label>
+                    <Input name="email" type="email" required placeholder="email@address.com" className="rounded-none border-muted h-12" />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Phone Number</label>
+                    <Input name="phone" required placeholder="0400 000 000" className="rounded-none border-muted h-12" />
+                  </div>
                 </div>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">

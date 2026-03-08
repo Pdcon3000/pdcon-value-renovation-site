@@ -17,12 +17,19 @@ export function ConsultationPage() {
     setIsSubmitting(true);
     
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
 
     try {
       // Store in Blink DB
       await blink.db.consultations.create({
-        ...data,
+        name: formData.get('name') as string,
+        phone: formData.get('phone') as string,
+        email: formData.get('email') as string,
+        suburb: formData.get('suburb') as string,
+        type: formData.get('type') as string || 'pre-sale',
+        message: [
+          formData.get('value') ? `Estimated value: ${formData.get('value')}` : '',
+          formData.get('message') || ''
+        ].filter(Boolean).join('. '),
         status: 'new',
         createdAt: new Date().toISOString()
       });

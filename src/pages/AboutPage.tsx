@@ -71,23 +71,6 @@ export function AboutPage() {
         </Container>
       </section>
 
-      {/* Strategic Diagram Section */}
-      <section className="py-32 bg-white">
-        <Container className="flex flex-col gap-16">
-          <div className="text-center max-w-3xl mx-auto flex flex-col gap-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-secondary">Visualising the Strategy</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">Strategic <span className="text-gold italic">Ecosystem Overview</span></h2>
-          </div>
-          <div className="bg-muted p-8 lg:p-20 rounded-sm shadow-elegant border border-border">
-            <img 
-              src="https://blink.new/attachments/Diragram for web.png" 
-              alt="PDCON Strategy Diagram" 
-              className="w-full h-auto max-w-5xl mx-auto shadow-2xl rounded-sm"
-            />
-          </div>
-        </Container>
-      </section>
-
       {/* Ecosystem Infographic Section */}
       <section className="py-32 bg-muted border-y border-border overflow-hidden">
         <Container className="flex flex-col gap-24">
