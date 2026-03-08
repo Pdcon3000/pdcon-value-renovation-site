@@ -207,6 +207,15 @@ export function ProjectDetailPage() {
                     <p className="text-sm text-white/40 mt-4 font-light italic">Generated from a $38,000 strategic refresh investment.</p>
                   </div>
                 )}
+
+                {project.id === 'devon-meadows-transformation' && (
+                  <div className="pt-12 border-t border-white/10 mt-4">
+                    <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
+                      $1,455,000
+                    </div>
+                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Sold Price Achieved</div>
+                  </div>
+                )}
               </div>
 
               <Button asChild className="w-full bg-secondary text-primary font-bold hover:bg-white h-20 text-lg transition-all duration-500 relative z-10 shadow-gold mt-4">

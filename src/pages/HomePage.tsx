@@ -233,7 +233,7 @@ export function HomePage() {
                 after: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop"
               },
               {
-                title: "Devon Meadows Property Transformation",
+                title: "5 Fisheries Road, Devon Meadows",
                 subtitle: "Specialised Project Stabilisation",
                 before: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"

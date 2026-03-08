@@ -77,13 +77,13 @@ export const projects = [
   },
   {
     id: 'devon-meadows-transformation',
-    title: 'Devon Meadows Property Transformation',
+    title: '5 Fisheries Road, Devon Meadows',
     suburb: 'Devon Meadows',
     type: 'Project Stabilisation',
     roi: 'N/A',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
-    description: 'Specialist renovation management to stabilise and complete an unfinished project abandoned by another party.',
-    overview: 'This project involved a property that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
+    description: 'Specialist renovation management to stabilise and complete an unfinished project abandoned by another party at 5 Fisheries Road.',
+    overview: 'This project involved a property at 5 Fisheries Road, Devon Meadows, that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
     strategy: 'Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.',
     scope: [
       'Project audit and stabilisation',
@@ -96,7 +96,8 @@ export const projects = [
     result: 'The project ultimately became over-capitalised, however the renovation strategy prevented a far more severe financial loss. Key lesson: Never over-capitalise. Do not renovate based on emotion.',
     metrics: [
       { label: 'Purchase price', value: '$945,000' },
-      { label: 'Total renovation costs', value: '$450,000' }
+      { label: 'Total renovation costs', value: '$450,000' },
+      { label: 'Sale price achieved', value: '$1,455,000', highlight: true }
     ]
   },
   {
