@@ -182,28 +182,25 @@ export function HomePage() {
               <div className="grid grid-cols-12 gap-6 items-start">
                 <div className="col-span-8 overflow-hidden shadow-2xl">
                   <img 
-                    src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463" 
-                    alt="Berwick Transformation - After" 
+                    src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692" 
+                    alt="Berwick Transformation - Exterior" 
                     className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
                 <div className="col-span-4 flex flex-col gap-6 mt-20">
                   <div className="overflow-hidden shadow-2xl">
                     <img 
-                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463" 
-                      alt="Berwick Living Space" 
+                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FJEEZGcyQ__b575a0c1.jpeg?alt=media&token=06b9fb2f-2888-498c-8e6e-54908421271f" 
+                      alt="Berwick Transformation - Interior" 
                       className="w-full aspect-square object-cover"
                     />
                   </div>
                   <div className="overflow-hidden shadow-2xl relative">
                     <img 
-                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f" 
-                      alt="Before Transformation" 
-                      className="w-full aspect-square object-cover grayscale opacity-40"
+                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2F12__8ce17499.jpg?alt=media&token=f8759e6e-9527-4073-818f-1fe09fe76c5f" 
+                      alt="Entryway Presentation" 
+                      className="w-full aspect-square object-cover"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-white bg-primary/80 px-4 py-2">Before</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -233,7 +230,7 @@ export function HomePage() {
               <div className="lg:col-span-7">
                 <BeforeAfterSlider 
                   beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f"
-                  afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463"
+                  afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa__e77f1bcf.jpeg?alt=media&token=80482f77-212b-49c6-abc6-e4f90e2b8719"
                   beforeLabel="Original Presentation"
                   afterLabel="Strategic Transformation"
                   className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"

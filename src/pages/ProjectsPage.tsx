@@ -14,7 +14,7 @@ export const projects = [
     suburb: 'Berwick',
     type: 'Strategic Pre-Sale Renovation',
     roi: '433%',
-    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692',
     description: 'This project involved a complete pre-sale transformation designed to reposition the property for the market.',
     overview: 'This project involved a complete pre-sale transformation designed to reposition the property for the market. The renovation included major improvements to the interior and exterior of the home, creating a modern presentation that significantly increased buyer appeal.',
     challenge: 'The project was delivered during a period of market slowdown caused by rising interest rates which reduced buyer confidence. Despite these challenging conditions the final result significantly exceeded expectations.',
@@ -37,8 +37,18 @@ export const projects = [
     gallery: [
       {
         before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f',
-        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
-        label: 'Berwick Transformation'
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FJEEZGcyQ__b575a0c1.jpeg?alt=media&token=06b9fb2f-2888-498c-8e6e-54908421271f',
+        label: 'Kitchen & Dining Transformation'
+      },
+      {
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa__e77f1bcf.jpeg?alt=media&token=80482f77-212b-49c6-abc6-e4f90e2b8719',
+        label: 'Living Area Refinement'
+      },
+      {
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2F12__8ce17499.jpg?alt=media&token=f8759e6e-9527-4073-818f-1fe09fe76c5f',
+        label: 'Entryway Presentation'
       }
     ]
   },
