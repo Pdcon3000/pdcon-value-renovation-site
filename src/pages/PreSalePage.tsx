@@ -103,25 +103,25 @@ export function PreSalePage() {
         <Container className="flex flex-col gap-16">
           <div className="flex flex-col gap-4">
             <span className="text-xs font-bold uppercase tracking-widest text-secondary">The Transformation</span>
-            <h2 className="text-4xl font-display font-bold text-primary">Case Study: Berwick Property Transformation</h2>
+            <h2 className="text-4xl font-display font-bold text-primary italic">Featured Case Study: Berwick Property Transformation</h2>
           </div>
           <BeforeAfterSlider 
-            beforeImage="https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop" 
-            afterImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
+            beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f" 
+            afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463" 
             beforeLabel="Dated Presentation"
             afterLabel="Architectural Ready"
           />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 pt-8">
             <div className="flex flex-col gap-4">
-              <h4 className="text-lg font-bold font-heading">The Strategy</h4>
+              <h4 className="text-lg font-bold font-heading italic">The Strategy</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Remove heavy window treatments, update flooring to light oak, and repaint the entire interior in a bright, neutral architectural white to enhance volume.
+                Strategic modernization of the interior and exterior to reposition the property for a premium market segment and maximize buyer appeal.
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h4 className="text-lg font-bold font-heading">The Outcome</h4>
+              <h4 className="text-lg font-bold font-heading italic">The Outcome</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Property sold in 11 days after the first open home. The final sale price exceeded the owner's original expectation by $85,000.
+                Achieved a significant value increase of $455,000, delivering a high-end presentation that exceeded all market expectations.
               </p>
             </div>
             <div className="flex flex-col gap-6 justify-center">

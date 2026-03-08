@@ -37,7 +37,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-3xl font-display font-bold tracking-tighter italic">PDCON</span>
-                <span className="text-[9px] uppercase tracking-[0.3em] font-bold text-secondary">Strategic Property Transformation</span>
+                <span className="text-[9px] uppercase tracking-[0.3em] font-bold text-secondary">Property Value Improvement Specialists</span>
               </div>
             </Link>
             <p className="text-white/50 leading-relaxed max-w-sm font-light italic">
@@ -140,7 +140,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-white/30 text-[9px] uppercase tracking-[0.2em] font-bold">
-          <p>© {new Date().getFullYear()} PDCON STRATEGIC PROPERTY TRANSFORMATION. ALL RIGHTS RESERVED.</p>
+          <p>© {new Date().getFullYear()} PDCON PROPERTY VALUE IMPROVEMENT SPECIALISTS. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-8">
             <Link to="/legal" className="hover:text-white transition-colors">Legal & Compliance</Link>
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Strategy</Link>

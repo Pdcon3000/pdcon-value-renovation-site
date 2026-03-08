@@ -192,7 +192,7 @@ export function ProjectDetailPage() {
                 {project.id === 'berwick-transformation' && (
                   <div className="pt-12 border-t border-white/10 mt-4">
                     <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
-                      $355,000
+                      $455,000
                     </div>
                     <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Value Increase</div>
                   </div>
@@ -210,10 +210,8 @@ export function ProjectDetailPage() {
 
                 {project.id === 'devon-meadows-transformation' && (
                   <div className="pt-12 border-t border-white/10 mt-4">
-                    <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
-                      $1,455,000
-                    </div>
-                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Sold Price Achieved</div>
+                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-secondary italic">Strategic Outcome</div>
+                    <p className="text-xl text-white/80 mt-4 font-light italic">Loss significantly reduced through strategic intervention.</p>
                   </div>
                 )}
               </div>

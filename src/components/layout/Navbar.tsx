@@ -68,7 +68,7 @@ export function Navbar() {
               "text-[9px] uppercase tracking-[0.3em] font-bold transition-colors opacity-60",
               useWhiteText ? "text-secondary" : "text-secondary"
             )}>
-              Strategic Property Transformation
+              Property Value Improvement Specialists
             </span>
           </div>
         </Link>

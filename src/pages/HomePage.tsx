@@ -50,7 +50,7 @@ export function HomePage() {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-            alt="Strategic Property Transformation" 
+            alt="Property Value Improvement Specialists" 
             className="w-full h-full object-cover brightness-[0.3] scale-105 animate-pulse-slow"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-transparent to-primary" />
@@ -58,10 +58,10 @@ export function HomePage() {
 
         <Container className="relative z-10 text-center flex flex-col items-center">
           <span className="text-secondary font-bold uppercase tracking-[0.4em] text-xs mb-8 animate-reveal stagger-1">
-            Melbourne's Strategic Renovation Specialists
+            Melbourne's Property Value Improvement Specialists
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-bold text-white mb-8 max-w-6xl leading-[1.05] animate-reveal stagger-2">
-            Strategic Property <span className="text-gold italic">Transformation.</span>
+            Strategic Property <span className="text-gold italic">Value Improvement.</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/70 max-w-2xl mb-12 font-medium leading-relaxed animate-reveal stagger-3">
@@ -102,22 +102,22 @@ export function HomePage() {
           <div className="flex flex-col gap-24">
             <div className="text-center max-w-3xl mx-auto flex flex-col gap-6">
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Strategic Partnership</span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary italic">Who We Help</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary italic">Positioning Your Asset for Maximum Value</h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {[
                 {
                   title: "Vendors Preparing to Sell",
-                  desc: "We help homeowners prepare their property for sale through targeted renovations that increase buyer appeal and maximise sale price."
+                  desc: "We specialise in strategic pre-sale renovations that significantly increase buyer appeal and maximise final sale price through professional presentation."
                 },
                 {
                   title: "Buyers Improving a New Purchase",
-                  desc: "Many buyers purchase homes with renovation potential. PDCON helps transform newly purchased properties through strategic improvements."
+                  desc: "Strategic improvements for newly purchased properties, focusing on modernising the home and increasing immediate equity and lifestyle value."
                 },
                 {
-                  title: "Property Investors",
-                  desc: "Investors often purchase properties that require upgrades. PDCON helps increase resale value through fast, targeted renovations."
+                  title: "Real Estate Agents",
+                  desc: "We partner with agents to solve presentation challenges for their clients, ensuring properties are listing-ready and positioned for top-tier results."
                 }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col gap-8 p-12 bg-muted border border-border rounded-none hover:border-secondary transition-all duration-500 hover:shadow-elegant group">
@@ -156,10 +156,10 @@ export function HomePage() {
 
               <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10 overflow-hidden">
                 {[
-                  { label: "Before renovation value", value: "$1,600,000" },
-                  { label: "Renovation investment", value: "$250,000" },
+                  { label: "Estimated value before renovation", value: "$1,650,000" },
+                  { label: "Renovation investment", value: "$105,000" },
                   { label: "Sale price achieved", value: "$2,105,000" },
-                  { label: "Value increase", value: "$355,000", highlight: true }
+                  { label: "Value increase", value: "$455,000", highlight: true }
                 ].map((stat, i) => (
                   <div key={i} className="bg-primary p-10 flex flex-col gap-3">
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/40">{stat.label}</span>
@@ -170,7 +170,7 @@ export function HomePage() {
 
               <div className="flex flex-col gap-6 items-start">
                 <p className="text-5xl md:text-7xl font-display font-bold text-secondary tracking-tight">
-                  $355,000 <span className="text-2xl md:text-3xl uppercase tracking-widest ml-2">Value Increase</span>
+                  $455,000 <span className="text-2xl md:text-3xl uppercase tracking-widest ml-2">Value Increase</span>
                 </p>
                 <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 text-lg transition-all duration-500">
                   <Link to="/projects/berwick-transformation">View Full Case Study</Link>
@@ -182,7 +182,7 @@ export function HomePage() {
               <div className="grid grid-cols-12 gap-6 items-start">
                 <div className="col-span-8 overflow-hidden shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop" 
+                    src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463" 
                     alt="Berwick Transformation - After" 
                     className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -190,14 +190,14 @@ export function HomePage() {
                 <div className="col-span-4 flex flex-col gap-6 mt-20">
                   <div className="overflow-hidden shadow-2xl">
                     <img 
-                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
+                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463" 
                       alt="Berwick Living Space" 
                       className="w-full aspect-square object-cover"
                     />
                   </div>
                   <div className="overflow-hidden shadow-2xl relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" 
+                      src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f" 
                       alt="Before Transformation" 
                       className="w-full aspect-square object-cover grayscale opacity-40"
                     />
@@ -215,58 +215,149 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* 4. BEFORE AND AFTER TRANSFORMATIONS - UPDATED WITH SUBURB REFERENCES */}
+      {/* 4. REAL PROPERTY TRANSFORMATIONS */}
       <section className="bg-white py-40">
         <Container clean className="flex flex-col gap-32">
-          <div className="text-center max-w-3xl mx-auto flex flex-col gap-8">
-            <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Strategic Portfolio</span>
-            <h2 className="text-5xl md:text-6xl font-display font-bold text-primary italic">Property Transformations</h2>
-            <p className="text-muted-foreground text-xl font-light">Explore our methodology through visual evidence of pre-sale optimisation.</p>
+          <div className="text-center max-w-4xl mx-auto flex flex-col gap-8">
+            <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Value Optimisation</span>
+            <h2 className="text-5xl md:text-7xl font-display font-bold text-primary italic">Real Property Transformations</h2>
+            <p className="text-xl font-heading font-medium text-secondary italic">Strategic renovations designed to increase property value and improve buyer appeal.</p>
+            <p className="text-muted-foreground text-xl font-light leading-relaxed max-w-3xl mx-auto">
+              Every property presents a unique opportunity. Our renovation strategy focuses on improving presentation, solving complex renovation challenges, and maximising market potential.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-40">
-            {[
-              {
-                title: "Berwick Property Transformation",
-                subtitle: "Strategic Pre-Sale Renovation",
-                before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
-                after: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop"
-              },
-              {
-                title: "5 Fisheries Road, Devon Meadows",
-                subtitle: "Specialised Project Stabilisation",
-                before: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforeDevonMeadows__4bceea06.jpg?alt=media&token=fe75ccdc-096d-4819-b3c8-9e087ab6be24",
-                after: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39"
-              },
-              {
-                title: "Beaconsfield Property Transformation",
-                subtitle: "Market Repositioning Upgrade",
-                before: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforBeaconsfiledupper__a6826761.jpg?alt=media&token=7593da9a-c960-4d7d-972c-03fd820c8158",
-                after: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71"
-              }
-            ].map((proj, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
-                <div className={cn("lg:col-span-8", i % 2 === 1 && "lg:order-2")}>
-                  <BeforeAfterSlider 
-                    beforeImage={proj.before}
-                    afterImage={proj.after}
-                    beforeLabel="Original Presentation"
-                    afterLabel="Strategic Transformation"
-                    className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"
-                  />
-                </div>
-                <div className={cn("lg:col-span-4 flex flex-col gap-10", i % 2 === 1 && "lg:order-1 lg:text-right lg:items-end")}>
-                  <div className="flex flex-col gap-4">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Case Study {i + 1}</span>
-                    <h3 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">{proj.title}</h3>
-                    <p className="text-xl font-heading font-medium text-muted-foreground italic">{proj.subtitle}</p>
-                  </div>
-                  <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300">
-                    <Link to="/projects">View Case Study</Link>
-                  </Button>
-                </div>
+          <div className="grid grid-cols-1 gap-48">
+            {/* Project 1: Berwick */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+              <div className="lg:col-span-7">
+                <BeforeAfterSlider 
+                  beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f"
+                  afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463"
+                  beforeLabel="Original Presentation"
+                  afterLabel="Strategic Transformation"
+                  className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"
+                />
               </div>
-            ))}
+              <div className="lg:col-span-5 flex flex-col gap-10">
+                <div className="flex flex-col gap-4">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Berwick Property Transformation</span>
+                  <h3 className="text-4xl md:text-5xl font-display font-bold text-primary italic leading-tight">Strategic Pre-Sale Renovation</h3>
+                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed italic">
+                  This project involved a complete pre-sale transformation designed to reposition the property for the market. The renovation included major improvements to the interior and exterior of the home, creating a modern presentation that significantly increased buyer appeal.
+                </p>
+                
+                <div className="grid grid-cols-1 gap-6 py-8 border-y border-muted">
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Estimated value before renovation</span>
+                    <span className="text-2xl font-display font-bold text-primary">$1,650,000</span>
+                  </div>
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Renovation investment</span>
+                    <span className="text-2xl font-display font-bold text-primary">$105,000</span>
+                  </div>
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Sale price achieved</span>
+                    <span className="text-2xl font-display font-bold text-primary">$2,105,000</span>
+                  </div>
+                  <div className="flex justify-between items-end pt-4">
+                    <span className="text-xs uppercase tracking-widest text-secondary font-bold">Value increase</span>
+                    <span className="text-4xl font-display font-bold text-secondary">$455,000</span>
+                  </div>
+                </div>
+
+                <div className="bg-secondary/10 p-8 border-l-4 border-secondary">
+                  <p className="text-secondary font-display font-bold text-3xl italic">$455,000 VALUE INCREASE</p>
+                </div>
+
+                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300 w-fit">
+                  <Link to="/projects/berwick-transformation">View Full Case Study</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Project 2: Devon Meadows */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center lg:flex-row-reverse">
+              <div className="lg:col-span-7 lg:order-2">
+                <BeforeAfterSlider 
+                  beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2F5FisherisBefore__30f81d11.jpg?alt=media&token=6e440628-9844-469b-980b-9685387a2069"
+                  afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39"
+                  beforeLabel="Unfinished Condition"
+                  afterLabel="Strategic Completion"
+                  className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"
+                />
+              </div>
+              <div className="lg:col-span-5 flex flex-col gap-10 lg:order-1 lg:text-right lg:items-end">
+                <div className="flex flex-col gap-4">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Devon Meadows Property Transformation</span>
+                  <h3 className="text-4xl md:text-5xl font-display font-bold text-primary italic leading-tight">Risk Recovery Renovation</h3>
+                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed italic">
+                  This project involved a partially completed property that had previously been started by another contractor but left unfinished. Our role was to assess the existing construction, correct previous issues, and complete the renovation while protecting the client from further loss.
+                </p>
+                
+                <div className="grid grid-cols-1 gap-6 py-8 border-y border-muted w-full">
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Purchase price</span>
+                    <span className="text-2xl font-display font-bold text-primary">$945,000</span>
+                  </div>
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Renovation and government costs</span>
+                    <span className="text-2xl font-display font-bold text-primary">$450,000</span>
+                  </div>
+                  <div className="flex justify-between items-end pt-4">
+                    <span className="text-xs uppercase tracking-widest text-secondary font-bold">Outcome</span>
+                    <span className="text-xl font-display font-bold text-secondary">Loss significantly reduced through strategic intervention.</span>
+                  </div>
+                </div>
+
+                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300 w-fit">
+                  <Link to="/projects/devon-meadows-transformation">View Full Case Study</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Project 3: Beaconsfield */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+              <div className="lg:col-span-7">
+                <BeforeAfterSlider 
+                  beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforBeaconsfiledupper__a6826761.jpg?alt=media&token=7593da9a-c960-4d7d-972c-03fd820c8158"
+                  afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71"
+                  beforeLabel="Auction Purchase Condition"
+                  afterLabel="Modernised Presentation"
+                  className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"
+                />
+              </div>
+              <div className="lg:col-span-5 flex flex-col gap-10">
+                <div className="flex flex-col gap-4">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Beaconsfield Property Transformation</span>
+                  <h3 className="text-4xl md:text-5xl font-display font-bold text-primary italic leading-tight">Auction Purchase Renovation</h3>
+                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed italic">
+                  This property was purchased at auction and required significant upgrades to modernise the home and improve presentation. The renovation focused on improving buyer appeal and aligning the property with market expectations.
+                </p>
+                
+                <div className="grid grid-cols-1 gap-6 py-8 border-y border-muted">
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Purchase price</span>
+                    <span className="text-2xl font-display font-bold text-primary">$570,000</span>
+                  </div>
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Renovation investment</span>
+                    <span className="text-2xl font-display font-bold text-primary">$110,000</span>
+                  </div>
+                  <div className="flex justify-between items-end pt-4">
+                    <span className="text-xs uppercase tracking-widest text-secondary font-bold">Sale price achieved</span>
+                    <span className="text-4xl font-display font-bold text-secondary">$800,000</span>
+                  </div>
+                </div>
+
+                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300 w-fit">
+                  <Link to="/projects/beaconsfield-transformation">View Full Case Study</Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
@@ -429,9 +520,9 @@ export function HomePage() {
             {[
               { 
                 title: "Ghan Projects", 
-                subtitle: "(Property Strategy)", 
+                subtitle: "(Strategy & Development Group)", 
                 icon: Building2,
-                desc: "Strategic identification of property potential and market positioning."
+                desc: "Strategic identification of property potential and market positioning within the Ghan Group ecosystem."
               },
               { 
                 title: "PDCON", 
@@ -442,9 +533,9 @@ export function HomePage() {
               },
               { 
                 title: "Renovation Capital", 
-                subtitle: "(Funding Partners)", 
+                subtitle: "(Strategic Funding Partners)", 
                 icon: BadgeDollarSign,
-                desc: "Upfront capital solutions for eligible property improvement projects."
+                desc: "Strategic capital solutions for property improvement projects, enabling vendors to renovate now and pay at settlement."
               },
               { 
                 title: "Property Owner", 
@@ -542,60 +633,48 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* 9. PROJECT PORTFOLIO */}
+      {/* 9. FREE GUIDE LEAD CAPTURE */}
       <section className="bg-muted py-32 border-y border-border">
-        <Container clean className="flex flex-col gap-24">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-12 text-center md:text-left">
-            <div className="flex flex-col gap-6">
-              <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Melbourne Excellence</span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight italic">Project Portfolio</h2>
+        <Container clean>
+          <div className="max-w-5xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-20 items-center">
+            <div className="flex flex-col gap-8">
+              <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Expert Resource</span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary italic leading-tight">
+                Free Guide for Melbourne Homeowners Preparing to Sell
+              </h2>
+              <div className="p-8 bg-primary text-white shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 -translate-y-1/2 translate-x-1/2 blur-2xl" />
+                <h3 className="text-2xl font-display font-bold mb-4 italic">How to Increase Property Value Before Selling</h3>
+                <p className="text-white/60 mb-6 font-light">Discover the strategic improvements that deliver the highest return on investment in the current Melbourne market.</p>
+                <div className="w-12 h-1 bg-secondary" />
+              </div>
             </div>
-            <Button asChild variant="link" className="text-secondary p-0 text-lg font-bold tracking-widest uppercase hover:text-primary transition-colors flex items-center gap-3">
-              <Link to="/projects">View All Success Stories <ArrowRight className="w-5 h-5" /></Link>
-            </Button>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                id: 'berwick-transformation',
-                title: 'Berwick Property Transformation',
-                suburb: 'Berwick',
-                image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
-                scope: 'Full Pre-Sale Renovation'
-              },
-              {
-                id: 'devon-meadows-transformation',
-                title: 'Devon Meadows Property Transformation',
-                suburb: 'Devon Meadows',
-                image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop',
-                scope: 'Property Improvement Project'
-              },
-              {
-                id: 'beaconsfield-upgrade',
-                title: 'Beaconsfield Upper Property Upgrade',
-                suburb: 'Beaconsfield Upper',
-                image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop',
-                scope: 'Lifestyle Presentation Upgrade'
-              }
-            ].map((p, i) => (
-              <Link key={i} to={`/projects/${p.id}`} className="group flex flex-col gap-6">
-                <div className="aspect-[4/3] overflow-hidden bg-white shadow-xl relative rounded-none">
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute bottom-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    <div className="bg-secondary text-primary font-bold px-6 py-3 shadow-gold">Explore Case Study</div>
-                  </div>
+            <div className="bg-white p-12 shadow-2xl border border-border w-full">
+              <form onSubmit={handleAssessmentSubmit} className="flex flex-col gap-6">
+                <div className="flex flex-col gap-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Full Name</label>
+                  <Input name="name" required placeholder="Name" className="rounded-none border-muted h-12" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">{p.scope}</span>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{p.suburb}</span>
-                  </div>
-                  <h4 className="text-2xl font-display font-bold text-primary group-hover:text-secondary transition-colors">{p.title}</h4>
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Email Address</label>
+                  <Input name="email" type="email" required placeholder="email@address.com" className="rounded-none border-muted h-12" />
                 </div>
-              </Link>
-            ))}
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Suburb</label>
+                    <Input name="suburb" required placeholder="Suburb" className="rounded-none border-muted h-12" />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Estimated property value</label>
+                    <Input name="value" placeholder="e.g. $1.5M" className="rounded-none border-muted h-12" />
+                  </div>
+                </div>
+                <Button type="submit" disabled={isSubmitting} className="bg-primary text-white hover:bg-secondary hover:text-primary h-16 text-sm font-bold uppercase tracking-widest transition-all duration-500 rounded-none mt-4">
+                  {isSubmitting ? 'Processing...' : 'Download Guide'}
+                </Button>
+              </form>
+            </div>
           </div>
         </Container>
       </section>
@@ -609,8 +688,8 @@ export function HomePage() {
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-primary max-w-4xl leading-tight italic">
               Thinking of Selling Your <span className="text-gold underline decoration-secondary/20 underline-offset-[12px]">Property?</span>
             </h2>
-            <p className="text-2xl text-muted-foreground font-medium max-w-2xl leading-relaxed">
-              A strategic renovation could significantly increase your property's sale result.
+            <p className="text-2xl text-muted-foreground font-medium max-w-2xl leading-relaxed italic">
+              A strategic renovation may significantly increase your property's market value and buyer appeal.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white px-16 py-10 text-2xl font-bold rounded-none shadow-elegant group transition-all duration-500 hover:scale-105 active:scale-95">
               <Link to="/consultation" className="flex items-center gap-4">

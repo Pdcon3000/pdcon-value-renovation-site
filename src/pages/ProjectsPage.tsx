@@ -13,97 +13,64 @@ export const projects = [
     title: 'Berwick Property Transformation',
     suburb: 'Berwick',
     type: 'Strategic Pre-Sale Renovation',
-    roi: '142%',
-    image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
-    description: 'This Berwick property underwent a full strategic pre-sale renovation designed to reposition the home for the market and significantly improve buyer appeal.',
-    overview: 'This project involved a full strategic renovation of a residential property in Berwick, Victoria. The home had strong underlying value but required substantial upgrades to align with modern buyer expectations and maximise its market potential. The renovation strategy focused on improving presentation, functionality and buyer appeal through a complete transformation of the interior and external presentation.',
-    challenge: 'The project was delivered during a period of market uncertainty. Rising interest rates had reduced buyer confidence and the local property market had slowed. The renovation strategy therefore focused on delivering maximum presentation impact and improving the perceived value of the property.',
-    strategy: 'A comprehensive pre-sale renovation focused on high-impact visual improvements and functional upgrades.',
+    roi: '433%',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
+    description: 'This project involved a complete pre-sale transformation designed to reposition the property for the market.',
+    overview: 'This project involved a complete pre-sale transformation designed to reposition the property for the market. The renovation included major improvements to the interior and exterior of the home, creating a modern presentation that significantly increased buyer appeal.',
+    challenge: 'The project was delivered during a period of market slowdown caused by rising interest rates which reduced buyer confidence. Despite these challenging conditions the final result significantly exceeded expectations.',
+    strategy: 'Strategic renovations designed to increase property value and improve buyer appeal.',
     scope: [
-      'New flooring throughout the home',
-      'New kitchen installation',
-      'Full bathroom renovation',
-      'New electrical lighting upgrades',
-      'Landscaping improvements',
-      'External rendering',
-      'Interior presentation upgrades'
+      'Interior modernization',
+      'Exterior aesthetic improvements',
+      'Major presentation upgrades',
+      'Market repositioning'
     ],
     duration: '14 Weeks',
-    projectDuration: 'The renovation was completed over a 14-week period including planning, renovation works and final presentation improvements.',
-    result: 'Despite the challenging market conditions, the final result exceeded expectations. The renovation significantly improved the property\'s presentation and market positioning, resulting in a stronger sale outcome than originally anticipated.',
+    projectDuration: 'The renovation was completed over a 14 week period.',
+    result: 'Despite challenging market conditions, the final result significantly exceeded expectations.',
     metrics: [
-      { label: 'Before renovation value', value: '$1,600,000' },
-      { label: 'Renovation investment', value: '$250,000' },
+      { label: 'Estimated value before renovation', value: '$1,650,000' },
+      { label: 'Renovation investment', value: '$105,000' },
       { label: 'Sale price achieved', value: '$2,105,000' },
-      { label: 'Value increase', value: '$355,000', highlight: true }
+      { label: 'Value increase', value: '$455,000', highlight: true }
     ],
     gallery: [
       {
-        before: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop',
-        after: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
-        label: 'Kitchen Transformation'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop',
-        after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
-        label: 'Living Area Refinement'
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
+        label: 'Berwick Transformation'
       }
     ]
   },
   {
-    id: 'berwick-refresh',
-    title: 'Berwick Property Refresh',
-    suburb: 'Berwick',
-    type: 'Cosmetic Upgrade',
-    roi: '218%',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop',
-    description: 'A targeted cosmetic upgrade strategy delivered with a renovation budget of $38,000 to resolve unfinished presentation items.',
-    overview: 'This Berwick property had been renovated approximately three years earlier, however several presentation items remained unfinished. Because of these incomplete improvements the owner struggled to achieve the desired sale result.',
-    strategy: 'A targeted cosmetic upgrade strategy was delivered with a renovation budget of $38,000. These relatively small but strategic upgrades significantly improved the property\'s presentation and buyer appeal.',
-    scope: [
-      'Roof restoration and colour update',
-      'Landscaping improvements',
-      'Epoxy flooring throughout key areas',
-      'External presentation improvements'
-    ],
-    duration: '3 Weeks',
-    projectDuration: 'The cosmetic refresh was completed swiftly to meet the listing timeline.',
-    result: 'The improvements significantly improved the property\'s presentation and buyer appeal, leading to a result that exceeded the previous stalled attempts.',
-    metrics: [
-      { label: 'Renovation investment', value: '$38,000' },
-      { label: 'Additional value achieved', value: '$83,000+', highlight: true }
-    ],
-    gallery: []
-  },
-  {
     id: 'devon-meadows-transformation',
-    title: '5 Fisheries Road, Devon Meadows',
+    title: 'Devon Meadows Property Transformation',
     suburb: 'Devon Meadows',
-    type: 'Project Stabilisation',
+    type: 'Risk Recovery Renovation',
     roi: 'N/A',
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
-    description: 'Specialist renovation management to stabilise and complete an unfinished project abandoned by another party at 5 Fisheries Road.',
-    overview: 'This project involved a property at 5 Fisheries Road, Devon Meadows, that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
-    strategy: 'Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.',
+    description: 'Specialist renovation management to assess, correct, and complete an unfinished project abandoned by another party.',
+    overview: 'This project involved a partially completed property that had previously been started by another contractor but left unfinished. Our role was to assess the existing construction, correct previous issues, and complete the renovation while protecting the client from further loss.',
+    strategy: 'Renovation requires specialised expertise. It involves solving existing problems and anticipating hidden issues through strategic intervention.',
     scope: [
-      'Project audit and stabilisation',
-      'Completion of structural works',
-      'Interior fit-out completion',
-      'Quality assurance and certification'
+      'Existing construction assessment',
+      'Structural issue correction',
+      'Project completion',
+      'Risk mitigation'
     ],
     duration: 'Multi-Phase',
-    projectDuration: 'Completion of a stalled project requiring extensive remedial work.',
-    result: 'The project ultimately became over-capitalised, however the renovation strategy prevented a far more severe financial loss. Key lesson: Never over-capitalise. Do not renovate based on emotion.',
+    projectDuration: 'Complex intervention to recover and complete a stalled project.',
+    result: 'Loss significantly reduced through strategic intervention.',
     metrics: [
       { label: 'Purchase price', value: '$945,000' },
-      { label: 'Total renovation costs', value: '$450,000' },
-      { label: 'Sale price achieved', value: '$1,455,000', highlight: true }
+      { label: 'Renovation and government costs', value: '$450,000' },
+      { label: 'Outcome', value: 'Loss Significantly Reduced', highlight: true }
     ],
     gallery: [
       {
-        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforeDevonMeadows__4bceea06.jpg?alt=media&token=fe75ccdc-096d-4819-b3c8-9e087ab6be24',
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2F5FisherisBefore__30f81d11.jpg?alt=media&token=6e440628-9844-469b-980b-9685387a2069',
         after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
-        label: 'Project Completion'
+        label: 'Devon Meadows Recovery'
       }
     ]
   },
@@ -111,21 +78,21 @@ export const projects = [
     id: 'beaconsfield-transformation',
     title: 'Beaconsfield Property Transformation',
     suburb: 'Beaconsfield',
-    type: 'Market Repositioning',
+    type: 'Auction Purchase Renovation',
     roi: '210%',
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71',
-    description: 'Major renovation following an auction purchase, focusing on repositioning the property through a targeted upgrade strategy.',
-    overview: 'This project involved a major renovation following an auction purchase. The renovation focused on improving the presentation and repositioning the property in the market through a targeted upgrade strategy.',
-    strategy: 'Strategic upgrades to align the property with high-end market expectations after a value-add acquisition.',
+    description: 'Significant upgrades to modernise a home purchased at auction, improving buyer appeal and market alignment.',
+    overview: 'This property was purchased at auction and required significant upgrades to modernise the home and improve presentation. The renovation focused on improving buyer appeal and aligning the property with market expectations.',
+    strategy: 'Strategic upgrades focusing on modern presentation and buyer appeal alignment.',
     scope: [
-      'Full interior cosmetic renovation',
-      'Kitchen upgrade',
-      'Presentation refinements',
-      'Landscaping'
+      'Auction purchase modernisaton',
+      'Interior upgrades',
+      'Market alignment strategy',
+      'Presentation improvements'
     ],
     duration: '10 Weeks',
-    projectDuration: 'A 10-week intensive renovation to prepare for resale.',
-    result: 'The property achieved a successful sale outcome, validating the repositioning strategy.',
+    projectDuration: 'Intensive modernization period following auction acquisition.',
+    result: 'Successful market alignment and improved buyer appeal.',
     metrics: [
       { label: 'Purchase price', value: '$570,000' },
       { label: 'Renovation investment', value: '$110,000' },
@@ -135,29 +102,9 @@ export const projects = [
       {
         before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforBeaconsfiledupper__a6826761.jpg?alt=media&token=7593da9a-c960-4d7d-972c-03fd820c8158',
         after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71',
-        label: 'External Transformation'
+        label: 'Beaconsfield Modernization'
       }
     ]
-  },
-  {
-    id: 'duffy-court-transformation',
-    title: '12 Duffy Court – Visual Transformation',
-    suburb: 'Duffy Court Suburb',
-    type: 'Visual Transformation',
-    roi: 'N/A',
-    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
-    description: 'A focused project on improving the property\'s overall presentation and visual impact for the market.',
-    overview: 'This project focused on improving the property\'s overall presentation and buyer appeal through carefully selected upgrades.',
-    strategy: 'The transformation modernised the appearance of the home and strengthened its visual impact for the market, resulting in improved sale readiness and stronger buyer interest.',
-    scope: [
-      'Visual presentation upgrades',
-      'Strategic lighting',
-      'Curb appeal enhancements'
-    ],
-    duration: '4 Weeks',
-    projectDuration: 'Focused aesthetic improvements completed for market launch.',
-    result: 'Significantly strengthened visual impact and buyer enquiry levels.',
-    metrics: []
   }
 ];
 
