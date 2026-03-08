@@ -73,18 +73,38 @@ export function ProjectDetailPage() {
       {/* Before/After Section */}
       <section className="py-12 bg-white overflow-hidden">
         <Container clean>
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-              <h2 className="text-3xl font-display font-bold text-primary">The Visual Transformation</h2>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare before and after</p>
-            </div>
-            <BeforeAfterSlider 
-              beforeImage={project.image.replace('crop', 'crop&brightness=0.6')} 
-              afterImage={project.image} 
-              beforeLabel="Original State"
-              afterLabel="PDCON Strategic Upgrade"
-              className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm"
-            />
+          <div className="flex flex-col gap-24">
+            {project.gallery ? (
+              project.gallery.map((item, i) => (
+                <div key={i} className="flex flex-col gap-8">
+                  <div className="flex flex-col md:flex-row justify-between items-end gap-6">
+                    <h2 className="text-3xl font-display font-bold text-primary italic">{item.label}</h2>
+                    <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare transformation</p>
+                  </div>
+                  <BeforeAfterSlider 
+                    beforeImage={item.before} 
+                    afterImage={item.after} 
+                    beforeLabel="Original State"
+                    afterLabel="Strategic Transformation"
+                    className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm border border-muted"
+                  />
+                </div>
+              ))
+            ) : (
+              <div className="flex flex-col gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-end gap-6">
+                  <h2 className="text-3xl font-display font-bold text-primary">The Visual Transformation</h2>
+                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare before and after</p>
+                </div>
+                <BeforeAfterSlider 
+                  beforeImage={project.image.replace('crop', 'crop&brightness=0.6')} 
+                  afterImage={project.image} 
+                  beforeLabel="Original State"
+                  afterLabel="PDCON Strategic Upgrade"
+                  className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm"
+                />
+              </div>
+            )}
           </div>
         </Container>
       </section>

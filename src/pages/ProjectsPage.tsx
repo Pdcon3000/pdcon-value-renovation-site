@@ -34,6 +34,18 @@ export const projects = [
       { label: 'Renovation investment', value: '$105,000' },
       { label: 'Sale price achieved', value: '$2,105,000' },
       { label: 'Value increase', value: '$455,000', highlight: true }
+    ],
+    gallery: [
+      {
+        before: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop',
+        after: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
+        label: 'Kitchen Transformation'
+      },
+      {
+        before: 'https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop',
+        after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+        label: 'Living Area Refinement'
+      }
     ]
   },
   {
