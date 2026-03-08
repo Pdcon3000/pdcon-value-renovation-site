@@ -14,13 +14,11 @@ export function ProjectDetailPage() {
 
   if (!project) return <div>Project not found</div>;
 
-  const isBerwick = project.id === 'berwick-transformation';
-
   return (
     <div className="flex flex-col w-full">
       <SEO 
         title={`${project.title} | Case Study`} 
-        description={`Detailed case study: ${project.title}. Strategic renovation in ${project.suburb}, Victoria.`}
+        description={`Detailed case study of this strategic ${project.type} project in ${project.suburb}, Victoria.`}
       />
       {/* Back Button */}
       <div className="bg-white pt-32 pb-8 border-b border-muted">
@@ -116,57 +114,33 @@ export function ProjectDetailPage() {
       <section className="py-32 bg-white">
         <Container clean className="grid grid-cols-1 lg:grid-cols-12 gap-24">
           <div className="lg:col-span-7 flex flex-col gap-16">
-            {/* Overview */}
             <div className="flex flex-col gap-8">
               <h3 className="text-3xl font-display font-bold text-primary italic">Overview</h3>
               <div className="prose prose-lg text-muted-foreground max-w-none">
-                {isBerwick ? (
-                  <>
-                    <p>This project involved a full strategic renovation of a residential property located in Berwick, Victoria.</p>
-                    <p>The property had strong underlying value but required significant improvements to meet modern buyer expectations and maximise its market potential.</p>
-                    <p>The goal was to deliver a comprehensive renovation that would reposition the property in the market and significantly improve buyer appeal.</p>
-                  </>
-                ) : (
-                  <p>{project.overview || project.description}</p>
-                )}
+                <p>
+                  {project.overview || project.description}
+                </p>
               </div>
             </div>
 
-            {/* The Challenge */}
-            {(isBerwick || project.challenge) && (
+            {project.challenge && (
               <div className="flex flex-col gap-8">
                 <h3 className="text-3xl font-display font-bold text-primary italic">The Challenge</h3>
                 <div className="prose prose-lg text-muted-foreground max-w-none">
-                  {isBerwick ? (
-                    <>
-                      <p>The renovation took place during a period of market uncertainty.</p>
-                      <p>Interest rate increases had recently reduced buyer confidence and the property market was experiencing a slowdown.</p>
-                      <p>This created additional pressure to ensure that the renovation strategy focused on improving presentation, desirability, and perceived value.</p>
-                      <p>The challenge was to deliver a renovation that would still achieve a strong market outcome despite these conditions.</p>
-                    </>
-                  ) : (
-                    <p>{project.challenge}</p>
-                  )}
+                  <p>{project.challenge}</p>
                 </div>
               </div>
             )}
 
-            {/* Renovation Strategy */}
             <div className="flex flex-col gap-8">
               <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Strategy</h3>
               <div className="prose prose-lg text-muted-foreground max-w-none">
-                {isBerwick ? (
-                  <>
-                    <p>The strategy focused on a full presentation transformation designed to modernise the home and align it with buyer expectations in the Berwick market.</p>
-                    <p>The renovation prioritised improvements that deliver the highest visual impact and buyer appeal.</p>
-                  </>
-                ) : (
-                  <p>{project.strategy || `Our strategic renovation focused on the high-impact areas that drive buyer emotion and perceived value.`}</p>
-                )}
+                <p>
+                  {project.strategy || `Our strategic renovation focused on the high-impact areas that drive buyer emotion and maximise sale price.`}
+                </p>
               </div>
             </div>
 
-            {/* Renovation Scope */}
             <div className="flex flex-col gap-8">
               <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Scope</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -179,53 +153,39 @@ export function ProjectDetailPage() {
                   ))
                 ) : (
                   [
-                    'New flooring throughout the home',
-                    'New kitchen installation',
-                    'Full renovation of bathroom',
-                    'New electrical lighting upgrades',
-                    'Landscaping improvements',
-                    'External rendering',
-                    'Interior presentation upgrades'
+                    { title: "Surface Modernisation", desc: "Full interior paint in architectural white to enhance natural light." },
+                    { title: "Kitchen Refresh", desc: "Resurfaced cabinetry, new stone surfaces, and premium hardware." },
+                    { title: "Flooring Upgrade", desc: "Installation of wide-plank engineered European Oak throughout." },
+                    { title: "Electrical & Lighting", desc: "Modern LED downlight plan and designer pendant installation." }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 p-6 bg-muted border border-border rounded-sm">
-                      <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
-                      <span className="font-bold font-heading text-primary">{item}</span>
+                    <div key={i} className="flex flex-col gap-3 p-8 bg-muted border border-border rounded-sm">
+                      <h4 className="font-bold font-heading text-primary">{item.title}</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                     </div>
                   ))
                 )}
               </div>
             </div>
 
-            {/* Project Duration */}
-            {isBerwick && (
+            {project.projectDuration && (
               <div className="flex flex-col gap-8">
                 <h3 className="text-3xl font-display font-bold text-primary italic">Project Duration</h3>
                 <div className="prose prose-lg text-muted-foreground max-w-none">
-                  <p>The renovation was completed over a 14-week period including planning, renovation works, and final presentation improvements.</p>
+                  <p>{project.projectDuration}</p>
                 </div>
               </div>
             )}
 
-            {/* The Result */}
-            <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary italic">The Result</h3>
-              <div className="prose prose-lg text-muted-foreground max-w-none">
-                {isBerwick ? (
-                  <>
-                    <p>Despite the challenging market conditions and reduced buyer confidence caused by interest rate increases, the final outcome exceeded expectations.</p>
-                    <p>The property achieved a significantly stronger sale result than originally anticipated.</p>
-                    <p>The transformation demonstrates the impact that strategic pre-sale renovation can have on property presentation and buyer demand.</p>
-                  </>
-                ) : project.result ? (
+            {project.result && (
+              <div className="flex flex-col gap-8">
+                <h3 className="text-3xl font-display font-bold text-primary italic">The Result</h3>
+                <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>{project.result}</p>
-                ) : (
-                  <p>The renovation delivered a strong market outcome through strategic presentation improvements.</p>
-                )}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
-          {/* Sidebar — Result Summary */}
           <div className="lg:col-span-5">
             <div className="sticky top-32 flex flex-col gap-12 bg-primary p-12 text-white shadow-2xl rounded-sm">
               <div className="flex flex-col gap-4">
@@ -254,7 +214,7 @@ export function ProjectDetailPage() {
                 )}
               </div>
 
-              {isBerwick && (
+              {project.id === 'berwick-transformation' && (
                 <div className="pt-8 border-t border-white/10">
                   <div className="text-5xl font-display font-bold text-secondary mb-2 animate-reveal">
                     $455,000

@@ -14,7 +14,7 @@ export const projects = [
     type: 'Strategic Pre-Sale Renovation',
     roi: '433%',
     image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
-    description: 'A comprehensive pre-sale renovation that achieved a record sale price in Berwick despite market uncertainty.',
+    description: 'A comprehensive pre-sale renovation that achieved a sale result substantially higher than originally anticipated, despite challenging market conditions.',
     overview: 'This project involved a full strategic renovation of a residential property located in Berwick, Victoria. The property had strong underlying value but required significant improvements to meet modern buyer expectations and maximise its market potential. The goal was to deliver a comprehensive renovation that would reposition the property in the market and significantly improve buyer appeal.',
     challenge: 'The renovation took place during a period of market uncertainty. Interest rate increases had recently reduced buyer confidence and the property market was experiencing a slowdown. This created additional pressure to ensure that the renovation strategy focused on improving presentation, desirability, and perceived value. The challenge was to deliver a renovation that would still achieve a strong market outcome despite these conditions.',
     strategy: 'The strategy focused on a full presentation transformation designed to modernise the home and align it with buyer expectations in the Berwick market. The renovation prioritised improvements that deliver the highest visual impact and buyer appeal.',
@@ -28,6 +28,7 @@ export const projects = [
       'Interior presentation upgrades'
     ],
     duration: '14 Weeks',
+    projectDuration: 'The renovation was completed over a 14-week period including planning, renovation works, and final presentation improvements.',
     result: 'Despite the challenging market conditions and reduced buyer confidence caused by interest rate increases, the final outcome exceeded expectations. The property achieved a significantly stronger sale result than originally anticipated. The transformation demonstrates the impact that strategic pre-sale renovation can have on property presentation and buyer demand.',
     metrics: [
       { label: 'Estimated value before renovation', value: '$1,650,000' },
@@ -116,7 +117,7 @@ export function ProjectsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-            {projects.map((project, i) => (
+            {projects.map((project) => (
               <Link 
                 key={project.id} 
                 to={`/projects/${project.id}`}
