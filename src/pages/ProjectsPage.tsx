@@ -12,7 +12,7 @@ export const projects = [
     title: 'Berwick Pre-Sale Renovation Transformation',
     suburb: 'Berwick',
     type: 'Strategic Pre-Sale Renovation',
-    roi: '433%',
+    roi: '142%',
     image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
     description: 'A comprehensive pre-sale renovation that achieved a sale result substantially higher than originally anticipated, despite challenging market conditions.',
     overview: 'This project involved a full strategic renovation of a residential property located in Berwick, Victoria. The property had strong underlying value but required significant improvements to meet modern buyer expectations and maximise its market potential. The goal was to deliver a comprehensive renovation that would reposition the property in the market and significantly improve buyer appeal.',
@@ -31,10 +31,10 @@ export const projects = [
     projectDuration: 'The renovation was completed over a 14-week period including planning, renovation works, and final presentation improvements.',
     result: 'Despite the challenging market conditions and reduced buyer confidence caused by interest rate increases, the final outcome exceeded expectations. The property achieved a significantly stronger sale result than originally anticipated. The transformation demonstrates the impact that strategic pre-sale renovation can have on property presentation and buyer demand.',
     metrics: [
-      { label: 'Estimated value before renovation', value: '$1,650,000' },
-      { label: 'Renovation investment', value: '$105,000' },
+      { label: 'Estimated value before renovation', value: '$1,600,000' },
+      { label: 'Renovation investment', value: '$250,000' },
       { label: 'Sale price achieved', value: '$2,105,000' },
-      { label: 'Value increase', value: '$455,000', highlight: true }
+      { label: 'Value increase', value: '$355,000', highlight: true }
     ],
     gallery: [
       {
@@ -72,9 +72,31 @@ export const projects = [
     title: 'Berwick Property Refresh',
     suburb: 'Berwick',
     type: 'Cosmetic Upgrade',
-    roi: '310%',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
-    description: 'Targeted interior improvements focusing on light, volume, and modern flooring.'
+    roi: '218%',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
+    description: 'This property had been renovated three years prior with some external updates, but a few remaining items prevented the owners from achieving their desired sale price. With a budget of $38,000, strategic improvements including roof restoration, colour updates, landscaping and epoxy flooring throughout brought significant value — the owners achieved approximately $83,000 more than expected.',
+    overview: 'This Berwick property had been renovated approximately three years before, including some external lighting upgrades. However, several smaller items remained unfinished, and the owners were unable to achieve their desired sale price. PDCON identified the high-impact improvements that would close the gap between the current presentation and modern buyer expectations.',
+    strategy: 'The strategy focused on targeted cosmetic improvements that deliver the highest visual impact relative to investment. Rather than a full renovation, the approach was to address the specific presentation gaps holding the property back from its full market potential.',
+    scope: [
+      'Roof restoration and colour update',
+      'Landscaping improvements',
+      'Epoxy flooring throughout',
+      'Presentation refinements'
+    ],
+    duration: '3 Weeks',
+    projectDuration: 'The cosmetic upgrade was completed over a 3-week period, ensuring minimal disruption while maximising presentation impact.',
+    result: 'With a modest budget of just $38,000, the targeted improvements brought significant additional value. The owners were able to achieve approximately $83,000 more than their previous expected sale price. This project demonstrates that even relatively small, strategic investments can deliver substantial returns when focused on the right improvements.',
+    metrics: [
+      { label: 'Renovation investment', value: '$38,000' },
+      { label: 'Additional value achieved', value: '$83,000', highlight: true }
+    ],
+    gallery: [
+      {
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__757fdbc8.jpg?alt=media&token=6c12647b-9df5-4fda-b439-74afa2155519',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463',
+        label: 'Exterior Transformation'
+      }
+    ]
   }
 ];
 

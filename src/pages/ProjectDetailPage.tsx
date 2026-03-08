@@ -217,9 +217,19 @@ export function ProjectDetailPage() {
               {project.id === 'berwick-transformation' && (
                 <div className="pt-8 border-t border-white/10">
                   <div className="text-5xl font-display font-bold text-secondary mb-2 animate-reveal">
-                    $455,000
+                    $355,000
                   </div>
                   <div className="text-xl font-display font-bold">Value Increase</div>
+                </div>
+              )}
+
+              {project.id === 'berwick-refresh' && (
+                <div className="pt-8 border-t border-white/10">
+                  <div className="text-5xl font-display font-bold text-secondary mb-2 animate-reveal">
+                    $83,000
+                  </div>
+                  <div className="text-xl font-display font-bold">Additional Value Achieved</div>
+                  <p className="text-sm text-white/40 mt-2">From a $38,000 investment</p>
                 </div>
               )}
 

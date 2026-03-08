@@ -151,10 +151,10 @@ export function HomePage() {
               </div>
               <div className="grid grid-cols-2 gap-x-12 gap-y-16 py-12 border-y border-white/10 bg-white/5 px-8">
                 {[
-                  { label: "Estimated value before renovation", value: "$1,650,000" },
-                  { label: "Renovation investment", value: "$105,000", highlight: true },
+                  { label: "Estimated value before renovation", value: "$1,600,000" },
+                  { label: "Renovation investment", value: "$250,000", highlight: true },
                   { label: "Sale price achieved", value: "$2,105,000" },
-                  { label: "Value increase", value: "$455,000", highlight: true }
+                  { label: "Value increase", value: "$355,000", highlight: true }
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col gap-2">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">{stat.label}</span>
@@ -164,7 +164,7 @@ export function HomePage() {
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-4xl md:text-5xl font-display font-bold text-secondary">
-                  $455,000 Value Increase
+                  $355,000 Value Increase
                 </p>
               </div>
               <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 w-fit mt-4">
