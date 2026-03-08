@@ -221,13 +221,6 @@ export function HomePage() {
                 after: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop"
               },
               {
-                title: "Berwick Property Refresh",
-                subtitle: "Cosmetic Value Improvement",
-                before: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__757fdbc8.jpg?alt=media&token=6c12647b-9df5-4fda-b439-74afa2155519",
-                after: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter12Duffy__1e75abc2.jpg?alt=media&token=ea56624a-6c5f-4031-bc9f-5acb8fe38463",
-                isCloseUp: true
-              },
-              {
                 title: "Devon Meadows Transformation",
                 subtitle: "Property Improvement Project",
                 before: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
@@ -248,7 +241,6 @@ export function HomePage() {
                     beforeLabel="Before"
                     afterLabel="After"
                     className="h-[400px] md:h-[600px] shadow-2xl rounded-sm border border-muted"
-                    imageClassName={proj.isCloseUp ? "scale-125" : ""}
                   />
                 </div>
                 <div className={cn("lg:col-span-5 flex flex-col gap-8", i % 2 === 1 && "lg:order-1 lg:text-right lg:items-end")}>
