@@ -139,11 +139,15 @@ export function HomePage() {
               <div className="flex flex-col gap-6">
                 <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">In-Depth Case Study</span>
                 <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">Berwick Property <br /><span className="text-gold italic">Transformation</span></h2>
+                <p className="text-sm text-white/40 font-bold uppercase tracking-widest">Strategic Pre-Sale Renovation</p>
               </div>
               <div className="flex flex-col gap-6 text-xl text-white/60 leading-relaxed max-w-xl">
                 <p>This Berwick property presented an opportunity for a complete pre-sale transformation.</p>
                 <p>The goal of the project was to reposition the home for the market through a full strategic renovation designed to significantly improve buyer appeal.</p>
                 <p>The renovation involved a comprehensive upgrade including a full renovation of the bathroom, improvements across the entire interior of the home, and external landscaping works.</p>
+                <p>The renovation was completed over a 14-week period.</p>
+                <p className="text-white/40 text-base italic">During the renovation phase the property market experienced a slowdown and recent interest rate increases affected buyer confidence.</p>
+                <p>Despite these challenges, the final result significantly exceeded expectations. Through strategic improvements and strong presentation, the property achieved a sale result substantially higher than originally anticipated.</p>
               </div>
               <div className="grid grid-cols-2 gap-x-12 gap-y-16 py-12 border-y border-white/10 bg-white/5 px-8">
                 {[
@@ -159,11 +163,8 @@ export function HomePage() {
                 ))}
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-3xl font-display font-bold text-secondary">
+                <p className="text-4xl md:text-5xl font-display font-bold text-secondary">
                   $455,000 Value Increase
-                </p>
-                <p className="text-sm text-white/60 italic border-l-2 border-secondary pl-6">
-                  Despite challenging market conditions and interest rate increases, the property achieved a sale result substantially higher than originally anticipated.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 w-fit mt-4">
