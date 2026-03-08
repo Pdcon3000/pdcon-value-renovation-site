@@ -13,37 +13,37 @@ export function AboutPage() {
         description="Learn about PDCON and our mission to help Melbourne property owners maximise their property value through strategic renovation and construction."
       />
       {/* Page Header */}
-      <section className="bg-primary pt-48 pb-24 relative overflow-hidden">
+      <section className="bg-primary pt-60 pb-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+          <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-[120px]" />
         </div>
-        <Container className="relative z-10 flex flex-col gap-8 text-center items-center py-0">
-          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Our Story</span>
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight">
-            Melbourne's <span className="text-gold italic">Renovation Specialists</span>
+        <Container className="relative z-10 flex flex-col gap-10 text-center items-center py-0">
+          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Our Group</span>
+          <h1 className="text-5xl md:text-8xl font-display font-bold text-white max-w-5xl leading-[1.1] italic">
+            Strategic Property <br /><span className="text-gold underline decoration-secondary/20 underline-offset-[16px]">Value Specialists</span>
           </h1>
-          <p className="text-xl text-white/60 max-w-2xl leading-relaxed">
-            Established in 2013, PDCON has spent over a decade perfecting the art of property value improvement through strategic construction and development.
+          <p className="text-2xl text-white/50 max-w-3xl leading-relaxed font-light">
+            Melbourne's leading infrastructure for pre-sale property transformation and strategic value creation since 2013.
           </p>
         </Container>
       </section>
 
       {/* History Section */}
-      <section className="py-32 bg-white">
-        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div className="flex flex-col gap-10">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              13+ Years of <span className="text-gold italic">Industry Excellence</span>
+      <section className="py-40 bg-white">
+        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+          <div className="flex flex-col gap-12">
+            <h2 className="text-5xl md:text-6xl font-display font-bold text-primary leading-tight italic">
+              13+ Years of <span className="text-gold">Value Creation</span>
             </h2>
-            <div className="flex flex-col gap-6 text-xl text-muted-foreground leading-relaxed">
+            <div className="flex flex-col gap-8 text-xl text-muted-foreground leading-relaxed font-light">
               <p>
-                PDCON (Perfect Design & Construction) was founded with a singular focus: delivering architectural quality to every renovation project. What began as a boutique construction firm has evolved into a comprehensive property improvement arm.
+                PDCON (Perfect Design & Construction) was established with a singular focus: delivering architectural quality and strategic market outcomes to every project. What began as a boutique construction firm has evolved into Melbourne's premier property value improvement group.
               </p>
               <p>
-                Our close partnership with **GHAN PROJECTS** allows us to provide more than just construction. We offer a holistic property strategy that integrates development expertise, market insights, and strategic financing.
+                Our close partnership with <strong className="text-primary">GHAN PROJECTS</strong> allows us to provide more than just construction. We offer a holistic property strategy that integrates development expertise, market insights, and strategic presentation.
               </p>
               <p>
-                We position ourselves not just as contractors, but as partners in your property journey—dedicated to increasing value and presentation through precision and craftsmanship.
+                We position ourselves as strategic partners in your property journey—dedicated to increasing value and presentation through precision, problem-solving, and professional management.
               </p>
             </div>
             <div className="flex gap-12 pt-8">

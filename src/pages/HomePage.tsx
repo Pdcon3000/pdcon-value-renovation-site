@@ -41,7 +41,7 @@ export function HomePage() {
   return (
     <div className="flex flex-col w-full">
       <SEO 
-        title="Renovate Before Selling. Maximise Your Property Value" 
+        title="Strategic Property Value Improvement Specialists | PDCON Melbourne" 
         description="Melbourne's premier property value improvement specialists. Strategic pre-sale renovations designed to increase buyer appeal and achieve stronger sale results."
       />
       
@@ -50,43 +50,46 @@ export function HomePage() {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-            alt="Beautifully Renovated Kitchen" 
-            className="w-full h-full object-cover brightness-[0.4] scale-105 animate-pulse-slow"
+            alt="Strategic Property Transformation" 
+            className="w-full h-full object-cover brightness-[0.3] scale-105 animate-pulse-slow"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-primary" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-transparent to-primary" />
         </div>
 
         <Container className="relative z-10 text-center flex flex-col items-center">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-8 max-w-5xl leading-[1.1] animate-reveal stagger-1">
-            Renovate Before Selling. <span className="text-gold italic">Maximise Your Property Value.</span>
+          <span className="text-secondary font-bold uppercase tracking-[0.4em] text-xs mb-8 animate-reveal stagger-1">
+            Melbourne's Strategic Renovation Specialists
+          </span>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-bold text-white mb-8 max-w-6xl leading-[1.05] animate-reveal stagger-2">
+            Strategic Property <span className="text-gold italic">Transformation.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/70 max-w-2xl mb-12 font-medium leading-relaxed animate-reveal stagger-2">
-            Strategic renovations designed to increase buyer appeal and achieve stronger sale results.
+          <p className="text-xl md:text-2xl text-white/70 max-w-2xl mb-12 font-medium leading-relaxed animate-reveal stagger-3">
+            Positioning your property for the market through strategic value improvement and premium presentation.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 animate-reveal stagger-3 mb-16">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary px-12 py-8 text-lg font-bold rounded-none shadow-gold transition-all duration-300 group">
+          <div className="flex flex-col sm:flex-row gap-6 animate-reveal stagger-4 mb-20">
+            <Button asChild size="lg" className="bg-secondary hover:bg-white text-primary px-12 py-8 text-lg font-bold rounded-none shadow-gold transition-all duration-300 group">
               <Link to="/consultation" className="flex items-center gap-3">
-                Book Property Improvement Consultation <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                Request Property Assessment <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 hover:border-white/40 px-12 py-8 text-lg font-bold rounded-none backdrop-blur-sm transition-all duration-300">
-              <Link to="/projects/berwick-transformation">View Case Study</Link>
+              <Link to="/projects">View Featured Transformations</Link>
             </Button>
           </div>
 
-          {/* Credibility Bar */}
-          <div className="w-full max-w-4xl border-t border-white/10 pt-12 animate-reveal stagger-4">
-            <div className="flex flex-wrap justify-center gap-8 md:gap-16 text-white/60 font-bold uppercase tracking-[0.2em] text-[10px]">
-              <div className="flex items-center gap-2">
+          {/* Instant Credibility Bar */}
+          <div className="w-full max-w-5xl border-t border-white/10 pt-12 animate-reveal stagger-5">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-20 text-white/40 font-bold uppercase tracking-[0.3em] text-[11px]">
+              <div className="flex items-center gap-3 hover:text-secondary transition-colors cursor-default">
                 <span className="text-secondary">13+</span> Years Experience
               </div>
-              <div className="flex items-center gap-2">
-                Melbourne Property Development
+              <div className="flex items-center gap-3 hover:text-secondary transition-colors cursor-default">
+                Strategic Renovation Specialists
               </div>
-              <div className="flex items-center gap-2">
-                Strategic Property Improvements
+              <div className="flex items-center gap-3 hover:text-secondary transition-colors cursor-default">
+                Melbourne Property Improvement Experts
               </div>
             </div>
           </div>
@@ -94,7 +97,7 @@ export function HomePage() {
       </section>
 
       {/* 2. WHO WE HELP */}
-      <section className="bg-white py-32 border-b border-muted">
+      <section className="bg-white py-40 border-b border-muted">
         <Container clean>
           <div className="flex flex-col gap-24">
             <div className="text-center max-w-3xl mx-auto flex flex-col gap-6">
@@ -130,127 +133,136 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* 3. FEATURED CASE STUDY: Berwick Property Transformation */}
-      <section className="bg-primary text-white py-32 overflow-hidden relative">
-        <div className="absolute top-0 left-0 w-full h-1 bg-secondary animate-marquee" />
-        <Container clean className="flex flex-col gap-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="flex flex-col gap-10">
-              <div className="flex flex-col gap-6">
-                <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">In-Depth Case Study</span>
-                <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">Berwick Property <br /><span className="text-gold italic">Transformation</span></h2>
-                <p className="text-sm text-white/40 font-bold uppercase tracking-widest">Strategic Pre-Sale Renovation</p>
+      {/* 3. FEATURED PROPERTY TRANSFORMATION: Berwick */}
+      <section className="bg-primary text-white py-40 overflow-hidden relative">
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-secondary/30" />
+        <Container clean className="flex flex-col gap-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-8">
+                <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Featured Property Transformation</span>
+                <h2 className="text-5xl md:text-7xl font-display font-bold leading-[1.1]">Berwick Property <br /><span className="text-gold italic">Transformation</span></h2>
               </div>
-              <div className="flex flex-col gap-6 text-xl text-white/60 leading-relaxed max-w-xl">
-                <p>This Berwick property presented an opportunity for a complete pre-sale transformation.</p>
-                <p>The goal of the project was to reposition the home for the market through a full strategic renovation designed to significantly improve buyer appeal.</p>
-                <p>The renovation involved a comprehensive upgrade including a full renovation of the bathroom, improvements across the entire interior of the home, and external landscaping works.</p>
-                <p>The renovation was completed over a 14-week period.</p>
-                <p className="text-white/40 text-base italic">During the renovation phase the property market experienced a slowdown and recent interest rate increases affected buyer confidence.</p>
-                <p>Despite these challenges, the final result significantly exceeded expectations. Through strategic improvements and strong presentation, the property achieved a sale result substantially higher than originally anticipated.</p>
+              
+              <div className="flex flex-col gap-8 text-xl text-white/60 leading-relaxed max-w-xl font-light">
+                <p>This Berwick property underwent a full strategic pre-sale renovation designed to reposition the home for the market and significantly improve buyer appeal.</p>
+                <p>The project included a comprehensive transformation of the interior presentation, bathroom renovation, landscaping improvements, and exterior upgrades.</p>
+                <p>The renovation was delivered over a 14-week period.</p>
+                <div className="p-8 bg-white/5 border-l-2 border-secondary italic text-lg">
+                  During the renovation phase the property market experienced a slowdown due to rising interest rates which reduced buyer confidence. Despite these challenging conditions, the final outcome exceeded expectations.
+                </div>
+                <p>Through strategic improvements and strong presentation the property achieved a significantly stronger result than originally anticipated.</p>
               </div>
-              <div className="grid grid-cols-2 gap-x-12 gap-y-16 py-12 border-y border-white/10 bg-white/5 px-8">
+
+              <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10 overflow-hidden">
                 {[
-                  { label: "Estimated value before renovation", value: "$1,600,000" },
-                  { label: "Renovation investment", value: "$250,000", highlight: true },
+                  { label: "Before renovation value", value: "$1,600,000" },
+                  { label: "Renovation investment", value: "$250,000" },
                   { label: "Sale price achieved", value: "$2,105,000" },
                   { label: "Value increase", value: "$355,000", highlight: true }
                 ].map((stat, i) => (
-                  <div key={i} className="flex flex-col gap-2">
-                    <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">{stat.label}</span>
-                    <span className={cn("text-4xl font-display font-bold", stat.highlight ? "text-secondary" : "text-white")}>{stat.value}</span>
+                  <div key={i} className="bg-primary p-10 flex flex-col gap-3">
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/40">{stat.label}</span>
+                    <span className={cn("text-4xl md:text-5xl font-display font-bold", stat.highlight ? "text-secondary" : "text-white")}>{stat.value}</span>
                   </div>
                 ))}
               </div>
-              <div className="flex flex-col gap-4">
-                <p className="text-4xl md:text-5xl font-display font-bold text-secondary">
-                  $355,000 Value Increase
+
+              <div className="flex flex-col gap-6 items-start">
+                <p className="text-5xl md:text-7xl font-display font-bold text-secondary tracking-tight">
+                  $355,000 <span className="text-2xl md:text-3xl uppercase tracking-widest ml-2">Value Increase</span>
                 </p>
+                <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 text-lg transition-all duration-500">
+                  <Link to="/projects/berwick-transformation">View Full Case Study</Link>
+                </Button>
               </div>
-              <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 w-fit mt-4">
-                <Link to="/projects/berwick-transformation">Explore Full Scope</Link>
-              </Button>
             </div>
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="aspect-[4/5] overflow-hidden shadow-2xl rounded-sm">
+            
+            <div className="relative group">
+              <div className="grid grid-cols-12 gap-6 items-start">
+                <div className="col-span-8 overflow-hidden shadow-2xl">
                   <img 
                     src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop" 
-                    alt="Berwick Kitchen Transformation" 
-                    className="w-full h-full object-cover"
+                    alt="Berwick Transformation - After" 
+                    className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
-                <div className="flex flex-col gap-4">
-                  <div className="aspect-square overflow-hidden shadow-2xl rounded-sm">
+                <div className="col-span-4 flex flex-col gap-6 mt-20">
+                  <div className="overflow-hidden shadow-2xl">
                     <img 
                       src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-                      alt="Berwick Living Area" 
-                      className="w-full h-full object-cover"
+                      alt="Berwick Living Space" 
+                      className="w-full aspect-square object-cover"
                     />
                   </div>
-                  <div className="aspect-[4/3] overflow-hidden shadow-2xl rounded-sm grayscale opacity-60">
+                  <div className="overflow-hidden shadow-2xl relative">
                     <img 
                       src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" 
                       alt="Before Transformation" 
-                      className="w-full h-full object-cover"
+                      className="w-full aspect-square object-cover grayscale opacity-40"
                     />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-white bg-primary/80 px-4 py-2">Before</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="absolute -bottom-12 -right-12 w-64 h-64 border border-secondary/20 -z-10" />
+              {/* Architectural accent lines */}
+              <div className="absolute -top-10 -right-10 w-40 h-[1px] bg-secondary/30" />
+              <div className="absolute -top-10 -right-10 w-[1px] h-40 bg-secondary/30" />
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 4. BEFORE AND AFTER TRANSFORMATIONS */}
-      <section className="bg-white py-32">
-        <Container clean className="flex flex-col gap-24">
-          <div className="text-center max-w-3xl mx-auto flex flex-col gap-6">
-            <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Visual Evidence</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">Property <span className="text-gold italic">Transformations</span></h2>
-            <p className="text-muted-foreground text-lg">Swipe or drag to compare the original state with our strategic improvements.</p>
+      {/* 4. BEFORE AND AFTER TRANSFORMATIONS - UPDATED WITH SUBURB REFERENCES */}
+      <section className="bg-white py-40">
+        <Container clean className="flex flex-col gap-32">
+          <div className="text-center max-w-3xl mx-auto flex flex-col gap-8">
+            <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Strategic Portfolio</span>
+            <h2 className="text-5xl md:text-6xl font-display font-bold text-primary italic">Property Transformations</h2>
+            <p className="text-muted-foreground text-xl font-light">Explore our methodology through visual evidence of pre-sale optimisation.</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-32">
+          <div className="grid grid-cols-1 gap-40">
             {[
               {
-                title: "Berwick Transformation",
+                title: "Berwick Property Transformation",
                 subtitle: "Strategic Pre-Sale Renovation",
                 before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop"
               },
               {
-                title: "Devon Meadows Transformation",
-                subtitle: "Property Improvement Project",
+                title: "Devon Meadows Property Transformation",
+                subtitle: "Specialised Project Stabilisation",
                 before: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
               },
               {
-                title: "Beaconsfield Upper Upgrade",
-                subtitle: "Lifestyle Property Presentation Upgrade",
+                title: "Beaconsfield Property Transformation",
+                subtitle: "Market Repositioning Upgrade",
                 before: "https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
               }
             ].map((proj, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-                <div className={cn("lg:col-span-7", i % 2 === 1 && "lg:order-2")}>
+              <div key={i} className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+                <div className={cn("lg:col-span-8", i % 2 === 1 && "lg:order-2")}>
                   <BeforeAfterSlider 
                     beforeImage={proj.before}
                     afterImage={proj.after}
-                    beforeLabel="Before"
-                    afterLabel="After"
-                    className="h-[400px] md:h-[600px] shadow-2xl rounded-sm border border-muted"
+                    beforeLabel="Original Presentation"
+                    afterLabel="Strategic Transformation"
+                    className="h-[450px] md:h-[700px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted"
                   />
                 </div>
-                <div className={cn("lg:col-span-5 flex flex-col gap-8", i % 2 === 1 && "lg:order-1 lg:text-right lg:items-end")}>
-                  <div className="flex flex-col gap-2">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-secondary">Melbourne Portfolio</span>
-                    <h3 className="text-4xl font-display font-bold text-primary leading-tight">{proj.title}</h3>
-                    <p className="text-lg font-heading font-medium text-muted-foreground italic">{proj.subtitle}</p>
+                <div className={cn("lg:col-span-4 flex flex-col gap-10", i % 2 === 1 && "lg:order-1 lg:text-right lg:items-end")}>
+                  <div className="flex flex-col gap-4">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Case Study {i + 1}</span>
+                    <h3 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">{proj.title}</h3>
+                    <p className="text-xl font-heading font-medium text-muted-foreground italic">{proj.subtitle}</p>
                   </div>
-                  <Button asChild variant="outline" className="border-primary/20 text-primary hover:bg-primary/5 rounded-none h-14 px-8 w-fit">
-                    <Link to="/projects">View Transformation Details</Link>
+                  <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-none h-16 px-12 text-sm font-bold tracking-widest uppercase transition-all duration-300">
+                    <Link to="/projects">View Case Study</Link>
                   </Button>
                 </div>
               </div>
@@ -259,107 +271,111 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* 5. SMALL IMPROVEMENTS BIGGER SALE RESULTS */}
-      <section className="bg-muted py-32 border-y border-border overflow-hidden">
+      {/* 5. SMALL IMPROVEMENTS BIGGER SALE RESULTS - UPDATED */}
+      <section className="bg-muted py-40 border-y border-border overflow-hidden">
         <Container clean>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="flex flex-col gap-10">
-              <div className="flex flex-col gap-6">
-                <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Strategic Advantage</span>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight italic">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-8">
+                <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Value Maximisation</span>
+                <h2 className="text-5xl md:text-6xl font-display font-bold text-primary leading-[1.1] italic">
                   Small Improvements. <br />Bigger Sale Results.
                 </h2>
               </div>
               
-              <div className="prose prose-lg text-muted-foreground max-w-xl">
-                <p>Many properties are listed for sale without the presentation expected by modern buyers.</p>
-                <p>Strategic improvements before listing can significantly improve buyer appeal and competition. Targeted upgrades such as paint, lighting, kitchen refreshes, and presentation improvements can help position your property for stronger sale results.</p>
-                <p className="font-bold text-primary">Often, relatively small investments can make a significant difference.</p>
+              <div className="prose prose-xl text-muted-foreground max-w-xl font-light leading-relaxed">
+                <p>Many homes are listed for sale without the presentation expected by modern buyers.</p>
+                <p>Strategic improvements before listing can significantly increase buyer appeal and strengthen the final sale result.</p>
+                <p>Targeted upgrades such as painting, lighting, kitchen improvements, flooring and landscaping often create meaningful improvements in perceived value.</p>
+                <p className="font-bold text-primary italic">Often, relatively small but strategic investments deliver the highest return on investment.</p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-10 pt-10">
                 {[
-                  { icon: Paintbrush, label: "Paint" },
-                  { icon: Grid3X3, label: "Kitchen Refresh" },
-                  { icon: Bath, label: "Bathroom Upgrade" },
+                  { icon: Paintbrush, label: "Painting" },
                   { icon: Lightbulb, label: "Lighting" },
-                  { icon: Home, label: "Flooring" }
+                  { icon: Grid3X3, label: "Kitchens" },
+                  { icon: Home, label: "Flooring" },
+                  { icon: Sparkles, label: "Landscaping" }
                 ].map((item, i) => (
-                  <div key={i} className="flex flex-col items-center text-center gap-4 group">
-                    <div className="w-16 h-16 bg-white border border-border flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-primary transition-all duration-500 rounded-none shadow-sm">
-                      <item.icon className="w-6 h-6" />
+                  <div key={i} className="flex flex-col items-center text-center gap-5 group">
+                    <div className="w-20 h-20 bg-white border border-border flex items-center justify-center text-secondary group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-700 shadow-sm">
+                      <item.icon className="w-8 h-8" />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-primary">{item.label}</span>
+                    <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-primary">{item.label}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-primary p-1 flex items-center justify-center rounded-sm shadow-2xl relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] bg-[size:30px_30px] opacity-10" />
-                <div className="relative z-10 flex flex-col items-center text-center p-12">
-                  <TrendingUp className="w-16 h-16 text-secondary mb-8" />
-                  <h3 className="text-3xl font-display font-bold text-white mb-6">Competition Drives Price</h3>
-                  <p className="text-white/60 leading-relaxed italic">
-                    "When multiple buyers fall in love with a property's presentation, the final sale result often exceeds market expectations."
+              <div className="aspect-square bg-primary p-1 flex items-center justify-center shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] bg-[size:40px_40px] opacity-10" />
+                <div className="relative z-10 flex flex-col items-center text-center p-16">
+                  <TrendingUp className="w-20 h-20 text-secondary mb-10 transition-transform duration-700 group-hover:scale-110" />
+                  <h3 className="text-4xl font-display font-bold text-white mb-8 italic">Market Positioning</h3>
+                  <p className="text-white/60 text-lg leading-relaxed italic font-light">
+                    "When multiple buyers fall in love with a property's presentation, the emotional connection drives competition and strengthens the final sale outcome."
                   </p>
                 </div>
               </div>
-              <div className="absolute -top-12 -left-12 w-48 h-48 bg-secondary/5 -z-10 blur-3xl rounded-full" />
+              <div className="absolute -top-12 -left-12 w-64 h-64 bg-secondary/5 -z-10 blur-3xl rounded-full" />
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 6. QUICK PROPERTY IMPROVEMENT ASSESSMENT */}
-      <section className="bg-white py-32">
+      {/* 6. QUICK PROPERTY IMPROVEMENT ASSESSMENT - UPDATED LABELS */}
+      <section className="bg-white py-40">
         <Container clean>
-          <div className="max-w-5xl mx-auto bg-primary text-white p-12 md:p-20 shadow-2xl border border-white/5 relative overflow-hidden rounded-sm">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 -translate-y-1/2 translate-x-1/2 blur-3xl rounded-full" />
+          <div className="max-w-6xl mx-auto bg-primary text-white p-16 md:p-24 shadow-2xl border border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 -translate-y-1/2 translate-x-1/2 blur-[100px] rounded-full" />
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col gap-4">
-                  <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Start Here</span>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight">Get a Quick <br /><span className="text-gold italic">Assessment</span></h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 relative z-10">
+              <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-6">
+                  <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Consultation Request</span>
+                  <h2 className="text-5xl md:text-6xl font-display font-bold leading-tight italic">Quick Property <br /><span className="text-gold">Assessment</span></h2>
                 </div>
-                <p className="text-white/60 leading-relaxed">
-                  Identify the high-impact improvements that will maximize your property's value. Receive a custom strategy brief from our specialists.
+                <p className="text-white/60 text-lg leading-relaxed font-light">
+                  Identify the strategic improvements required to maximise your property's value. Our specialists provide expert analysis on buyer appeal and market positioning.
                 </p>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-6">
                   {[
-                    "Expert Property Analysis",
-                    "Value-Add Recommendations",
-                    "ROI Focused Strategy"
+                    "Strategic Value Analysis",
+                    "Buyer Appeal Optimisation",
+                    "ROI Focused Improvements"
                   ].map((text, i) => (
-                    <div key={i} className="flex items-center gap-3 text-sm font-semibold">
-                      <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" /> {text}
+                    <div key={i} className="flex items-center gap-4 text-base font-medium">
+                      <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center border border-secondary/30">
+                        <CheckCircle2 className="w-4 h-4 text-secondary" />
+                      </div>
+                      {text}
                     </div>
                   ))}
                 </div>
               </div>
 
-              <form onSubmit={handleAssessmentSubmit} className="flex flex-col gap-6">
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Your Name</label>
-                  <Input name="name" required placeholder="John Doe" className="bg-white/5 border-white/10 h-14 rounded-none text-white focus:ring-secondary" />
+              <form onSubmit={handleAssessmentSubmit} className="flex flex-col gap-8">
+                <div className="flex flex-col gap-3">
+                  <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Full Name</label>
+                  <Input name="name" required placeholder="Name" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Email Address</label>
-                  <Input name="email" type="email" required placeholder="john@example.com" className="bg-white/5 border-white/10 h-14 rounded-none text-white focus:ring-secondary" />
+                <div className="flex flex-col gap-3">
+                  <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Email Address</label>
+                  <Input name="email" type="email" required placeholder="email@address.com" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
                 </div>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Suburb</label>
-                    <Input name="suburb" required placeholder="Berwick" className="bg-white/5 border-white/10 h-14 rounded-none text-white focus:ring-secondary" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  <div className="flex flex-col gap-3">
+                    <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Suburb</label>
+                    <Input name="suburb" required placeholder="Property Suburb" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Property Value</label>
-                    <Input name="value" placeholder="e.g. $1.5M" className="bg-white/5 border-white/10 h-14 rounded-none text-white focus:ring-secondary" />
+                  <div className="flex flex-col gap-3">
+                    <label className="text-[11px] font-bold uppercase tracking-[0.3em] text-white/50">Estimated property value</label>
+                    <Input name="value" placeholder="e.g. $1.6M" className="bg-white/5 border-white/10 h-16 text-white focus:ring-secondary placeholder:text-white/20" />
                   </div>
                 </div>
-                <Button type="submit" disabled={isSubmitting} className="bg-secondary text-primary hover:bg-white py-10 text-xl font-bold rounded-none shadow-gold transition-all duration-300">
+                <Button type="submit" disabled={isSubmitting} className="bg-secondary text-primary hover:bg-white h-20 text-xl font-bold transition-all duration-500 shadow-gold mt-4">
                   {isSubmitting ? 'Processing...' : 'Request Property Assessment'}
                 </Button>
               </form>

@@ -14,47 +14,47 @@ export function PreSalePage() {
         description="Strategic pre-sale renovations designed to maximise your property's market value and buyer appeal in Melbourne."
       />
       {/* Page Header */}
-      <section className="bg-primary pt-48 pb-24 relative overflow-hidden">
+      <section className="bg-primary pt-60 pb-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+          <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-[120px]" />
         </div>
-        <Container className="relative z-10 flex flex-col gap-8 text-center items-center py-0">
-          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Core Service</span>
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight">
-            Strategic <span className="text-gold italic">Pre-Sale</span> Renovations
+        <Container className="relative z-10 flex flex-col gap-10 text-center items-center py-0">
+          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Strategic Infrastructure</span>
+          <h1 className="text-5xl md:text-8xl font-display font-bold text-white max-w-5xl leading-[1.1] italic">
+            Strategic <span className="text-gold underline decoration-secondary/20 underline-offset-[16px]">Pre-Sale</span> Transformations
           </h1>
-          <p className="text-xl text-white/60 max-w-2xl leading-relaxed">
-            Targeted cosmetic improvements designed to prepare your home for the Melbourne property market and maximize your final sale price.
+          <p className="text-2xl text-white/50 max-w-3xl leading-relaxed font-light">
+            Targeted upgrades designed to reposition your asset for the market, increase buyer appeal and strengthen final sale results.
           </p>
-          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 mt-4">
-            <Link to="/consultation">Book Value Assessment</Link>
+          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 mt-8 transition-all duration-500 shadow-gold">
+            <Link to="/consultation">Book Property Assessment</Link>
           </Button>
         </Container>
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-32 bg-white">
-        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div className="flex flex-col gap-10">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              Our Philosophy: <span className="text-gold">ROI First</span>
+      <section className="py-40 bg-white">
+        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+          <div className="flex flex-col gap-12">
+            <h2 className="text-5xl md:text-6xl font-display font-bold text-primary leading-tight italic">
+              Our Methodology: <span className="text-gold">Value Creation</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              We don't just renovate; we strategize. Our pre-sale renovation model focuses exclusively on improvements that deliver the highest return on investment. We identify the high-impact areas that buyers care about most and address them with architectural precision.
+            <p className="text-xl text-muted-foreground leading-relaxed font-light">
+              We don't just renovate; we strategize. Our pre-sale transformation model focuses exclusively on improvements that deliver the highest return on investment. We identify the high-impact areas that buyers care about most and address them with professional precision.
             </p>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-8">
               {[
-                { title: "Targeted Cosmetic Upgrades", desc: "Focusing on surface-level improvements that drastically change the feel." },
-                { title: "Neutral & Sophisticated Palettes", desc: "Appealing to the broadest possible buyer demographic." },
-                { title: "Architectural Lighting", desc: "Creating space and mood that moves buyers emotionally." }
+                { title: "Strategic Market Repositioning", desc: "Aligning your property's presentation with high-end buyer expectations." },
+                { title: "Neutral Architectural Palettes", desc: "Appealing to the broadest possible buyer demographic through sophisticated design." },
+                { title: "Buyer Appeal Optimisation", desc: "Creating space, light and mood that moves buyers emotionally." }
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-12 h-12 bg-muted flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="w-6 h-6 text-secondary" />
+                <div key={i} className="flex gap-8 items-start group">
+                  <div className="w-14 h-14 bg-muted flex items-center justify-center shrink-0 border border-border group-hover:border-secondary transition-all duration-500 shadow-sm">
+                    <CheckCircle2 className="w-7 h-7 text-secondary" />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h4 className="text-lg font-bold font-heading">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <h4 className="text-xl font-bold font-heading text-primary italic">{item.title}</h4>
+                    <p className="text-base text-muted-foreground leading-relaxed font-light">{item.desc}</p>
                   </div>
                 </div>
               ))}

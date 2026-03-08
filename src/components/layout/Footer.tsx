@@ -32,16 +32,16 @@ export function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-4 flex flex-col gap-8">
             <Link to="/" className="flex items-center gap-4 group">
-              <div className="w-16 h-16 relative overflow-hidden bg-white/10 rounded-sm flex items-center justify-center border border-white/10 backdrop-blur-sm group-hover:bg-white/20 transition-all duration-300">
+              <div className="w-16 h-16 relative overflow-hidden bg-white/5 rounded-none flex items-center justify-center border border-white/10 backdrop-blur-sm group-hover:bg-white/10 transition-all duration-500">
                 <Building2 className="w-10 h-10 text-secondary" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold tracking-tight font-heading leading-tight">PDCON</span>
-                <span className="text-[10px] uppercase tracking-[0.3em] font-medium text-secondary">Perfect Design & Construction</span>
+                <span className="text-3xl font-display font-bold tracking-tighter italic">PDCON</span>
+                <span className="text-[9px] uppercase tracking-[0.3em] font-bold text-secondary">Strategic Property Transformation</span>
               </div>
             </Link>
-            <p className="text-white/60 leading-relaxed max-w-sm">
-              Melbourne's premier property value improvement specialists. Strategically renovating homes to increase buyer appeal and maximize final sale price. Est. 2013.
+            <p className="text-white/50 leading-relaxed max-w-sm font-light italic">
+              Melbourne's leading infrastructure for strategic property value improvement. We reposition residential assets for the market through professional transformation and premium presentation. Est. 2013.
             </p>
             <div className="flex gap-4">
               {[Instagram, Linkedin, Facebook].map((Icon, i) => (
@@ -139,12 +139,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-white/40 text-[10px] uppercase tracking-widest font-medium">
-          <p>© {new Date().getFullYear()} PDCON PERFECT DESIGN & CONSTRUCTION. ALL RIGHTS RESERVED.</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-white/30 text-[9px] uppercase tracking-[0.2em] font-bold">
+          <p>© {new Date().getFullYear()} PDCON STRATEGIC PROPERTY TRANSFORMATION. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-8">
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-            <a href="https://ghanprojects.com.au" className="hover:text-white transition-colors text-secondary underline decoration-secondary/30 underline-offset-4">Ghan Projects</a>
+            <Link to="/legal" className="hover:text-white transition-colors">Legal & Compliance</Link>
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Strategy</Link>
+            <a href="https://ghanprojects.com.au" className="hover:text-white transition-colors text-secondary underline decoration-secondary/30 underline-offset-8">Ghan Projects Group</a>
           </div>
         </div>
       </div>

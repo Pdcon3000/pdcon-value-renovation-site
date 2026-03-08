@@ -13,46 +13,48 @@ export function AgentsPage() {
         description="PDCON partners with Melbourne real estate agents to prepare properties for market, ensuring maximum sale results for vendors."
       />
       {/* Page Header */}
-      <section className="bg-primary pt-48 pb-24 relative overflow-hidden">
+      <section className="bg-primary pt-60 pb-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+          <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-secondary rounded-full -translate-y-1/2 translate-x-1/2 blur-[120px]" />
         </div>
-        <Container className="relative z-10 flex flex-col gap-8 text-center items-center py-0">
-          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Partnership</span>
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight">
-            Pre-Sale Renovation Partner for <span className="text-gold italic">Real Estate Agents</span>
+        <Container className="relative z-10 flex flex-col gap-10 text-center items-center py-0">
+          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Strategic Partnership</span>
+          <h1 className="text-5xl md:text-8xl font-display font-bold text-white max-w-5xl leading-[1.1] italic">
+            Strategic Property <span className="text-gold italic">Value Improvement</span> Partner for Real Estate Agents
           </h1>
-          <p className="text-xl text-white/60 max-w-2xl leading-relaxed">
-            Empower your vendors with the professional edge they need to compete at the top of the market. We handle the transformation, you handle the premium sale.
+          <p className="text-2xl text-white/50 max-w-3xl leading-relaxed font-light">
+            Empower your vendors with the professional infrastructure required to maximise property potential and vendor outcomes. We handle the transformation, you handle the premium sale.
           </p>
-          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 mt-4">
-            <Link to="/consultation">Refer a Vendor</Link>
+          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 mt-8 transition-all duration-500 shadow-gold">
+            <Link to="/consultation" className="flex items-center gap-4">Refer a Vendor <ArrowRight className="w-5 h-5" /></Link>
           </Button>
         </Container>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-32 bg-white">
-        <Container className="flex flex-col gap-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="flex flex-col gap-10">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-                Why Top Melbourne Agents <span className="text-gold italic">Partner with PDCON</span>
+      <section className="py-40 bg-white">
+        <Container className="flex flex-col gap-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+            <div className="flex flex-col gap-12">
+              <h2 className="text-5xl md:text-6xl font-display font-bold text-primary leading-tight italic">
+                Why Melbourne's Elite Agents Partner with PDCON
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                As an agent, your goal is to achieve the best possible result for your client in the shortest timeframe. PDCON provides the construction infrastructure to make that happen.
+              <p className="text-xl text-muted-foreground leading-relaxed font-light">
+                As an agent, your goal is to achieve the best possible result for your client. PDCON provides the strategic infrastructure to make that happen through professional value creation.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-muted border border-muted overflow-hidden">
                 {[
-                  { icon: BarChart3, title: "Increased Price Potential", desc: "Our strategic upgrades consistently add 10-20% to listing appraisals." },
-                  { icon: Clock, title: "Faster Buyer Interest", desc: "Move-in ready homes attract more enquiries and shorter days-on-market." },
-                  { icon: Zap, title: "Vendor Support", desc: "We take the stress off your vendors, providing a clear path to market readiness." },
-                  { icon: UserPlus, title: "Competitive Edge", desc: "Offer your clients a comprehensive value-add service that other agents can't match." }
+                  { icon: BarChart3, title: "Value Creation", desc: "Our strategic upgrades consistently increase listing appraisals and buyer competition." },
+                  { icon: Clock, title: "Market Readiness", desc: "Move-in ready homes attract immediate interest and shorter listing durations." },
+                  { icon: Zap, title: "Strategic Edge", desc: "We provide your vendors with a clear, professional path to market preparation." },
+                  { icon: UserPlus, title: "Agency Advantage", desc: "Offer your clients a comprehensive value-add service that separates your agency." }
                 ].map((item, i) => (
-                  <div key={i} className="flex flex-col gap-4 p-8 bg-muted border border-border rounded-sm hover:border-secondary transition-all">
-                    <item.icon className="w-8 h-8 text-secondary" />
-                    <h4 className="font-bold font-heading text-primary">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <div key={i} className="flex flex-col gap-6 p-10 bg-white hover:bg-muted transition-all duration-500 group">
+                    <item.icon className="w-10 h-10 text-secondary group-hover:scale-110 transition-transform duration-500" />
+                    <div className="flex flex-col gap-2">
+                      <h4 className="font-bold font-heading text-xl text-primary">{item.title}</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -78,30 +80,31 @@ export function AgentsPage() {
       </section>
 
       {/* Referral Process */}
-      <section className="py-32 bg-muted border-y border-border">
-        <Container className="flex flex-col gap-24">
-          <div className="text-center max-w-3xl mx-auto flex flex-col gap-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-secondary">Simplified Workflow</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">How We Work Together</h2>
-            <p className="text-muted-foreground text-lg">A seamless referral process designed to integrate with your listing timeline.</p>
+      <section className="py-40 bg-muted border-y border-border">
+        <Container className="flex flex-col gap-32">
+          <div className="text-center max-w-3xl mx-auto flex flex-col gap-8">
+            <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Strategic Workflow</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary italic">A Seamless Partnership</h2>
+            <p className="text-muted-foreground text-xl font-light">Our methodology is designed to integrate perfectly with your listing timeline.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
             {/* Connector Line */}
-            <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border -translate-y-1/2 z-0" />
+            <div className="hidden md:block absolute top-[48px] left-0 w-full h-[1px] bg-border z-0" />
             
             {[
-              { step: "01", title: "Agent Referral", desc: "Refer your vendor for a property improvement consultation during the pre-listing phase." },
-              { step: "02", title: "Rapid Strategy", desc: "We provide an onsite assessment and ROI strategy within 48 hours." },
-              { step: "03", title: "Execution & Listing", desc: "We execute the renovation swiftly, delivering a market-ready home for your photography." }
+              { step: "01", title: "Assessment Referral", desc: "Refer your vendor for a strategic property improvement assessment during the pre-listing phase." },
+              { step: "02", title: "Value Strategy", desc: "We provide a comprehensive onsite assessment and ROI-focused transformation strategy within 48 hours." },
+              { step: "03", title: "Execution & Launch", desc: "We execute the transformation swiftly, delivering a market-ready asset for your premium photography." }
             ].map((item, i) => (
-              <div key={i} className="flex flex-col items-center text-center gap-8 relative z-10">
-                <div className="w-20 h-24 bg-primary text-white flex items-center justify-center font-display font-bold text-3xl shadow-xl">
+              <div key={i} className="flex flex-col items-center text-center gap-10 relative z-10">
+                <div className="w-24 h-24 bg-primary text-white flex items-center justify-center font-display font-bold text-4xl shadow-2xl relative">
+                  <div className="absolute inset-0 border border-secondary/20 -m-2 -z-10" />
                   {item.step}
                 </div>
                 <div className="flex flex-col gap-4 px-6">
-                  <h4 className="text-xl font-bold font-heading text-primary">{item.title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <h4 className="text-2xl font-bold font-heading text-primary italic">{item.title}</h4>
+                  <p className="text-base text-muted-foreground leading-relaxed font-light">{item.desc}</p>
                 </div>
               </div>
             ))}

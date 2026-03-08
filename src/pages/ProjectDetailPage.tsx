@@ -9,15 +9,15 @@ import { projects } from './ProjectsPage';
 import { SEO } from '@/components/ui/SEO';
 
 export function ProjectDetailPage() {
-  const { projectId } = useParams({ from: '/projects/$projectId' });
+  const {projectId} = useParams({ from: '/projects/$projectId' });
   const project = projects.find(p => p.id === projectId);
 
   if (!project) return <div>Project not found</div>;
 
   return (
     <div className="flex flex-col w-full">
-      <SEO 
-        title={`${project.title} | Case Study`} 
+      <SEO
+        title={`${project.title} | Case Study`}
         description={`Detailed case study of this strategic ${project.type} project in ${project.suburb}, Victoria.`}
       />
       {/* Back Button */}
@@ -82,9 +82,9 @@ export function ProjectDetailPage() {
                     <h2 className="text-3xl font-display font-bold text-primary italic">{item.label}</h2>
                     <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare transformation</p>
                   </div>
-                  <BeforeAfterSlider 
-                    beforeImage={item.before} 
-                    afterImage={item.after} 
+                  <BeforeAfterSlider
+                    beforeImage={item.before}
+                    afterImage={item.after}
                     beforeLabel="Original State"
                     afterLabel="Strategic Transformation"
                     className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm border border-muted"
@@ -97,9 +97,9 @@ export function ProjectDetailPage() {
                   <h2 className="text-3xl font-display font-bold text-primary">The Visual Transformation</h2>
                   <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare before and after</p>
                 </div>
-                <BeforeAfterSlider 
-                  beforeImage={project.image.replace('crop', 'crop&brightness=0.6')} 
-                  afterImage={project.image} 
+                <BeforeAfterSlider
+                  beforeImage={project.image.replace('crop', 'crop&brightness=0.6')}
+                  afterImage={project.image}
                   beforeLabel="Original State"
                   afterLabel="PDCON Strategic Upgrade"
                   className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm"
@@ -111,12 +111,12 @@ export function ProjectDetailPage() {
       </section>
 
       {/* Detailed Content */}
-      <section className="py-32 bg-white">
-        <Container clean className="grid grid-cols-1 lg:grid-cols-12 gap-24">
-          <div className="lg:col-span-7 flex flex-col gap-16">
-            <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary italic">Overview</h3>
-              <div className="prose prose-lg text-muted-foreground max-w-none">
+      <section className="py-40 bg-white">
+        <Container clean className="grid grid-cols-1 lg:grid-cols-12 gap-32">
+          <div className="lg:col-span-8 flex flex-col gap-24">
+            <div className="flex flex-col gap-10">
+              <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Project Overview</h3>
+              <div className="prose prose-2xl text-muted-foreground max-w-none font-light leading-relaxed italic">
                 <p>
                   {project.overview || project.description}
                 </p>
@@ -124,117 +124,93 @@ export function ProjectDetailPage() {
             </div>
 
             {project.challenge && (
-              <div className="flex flex-col gap-8">
-                <h3 className="text-3xl font-display font-bold text-primary italic">The Challenge</h3>
-                <div className="prose prose-lg text-muted-foreground max-w-none">
+              <div className="flex flex-col gap-10">
+                <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">The Challenge</h3>
+                <div className="prose prose-xl text-muted-foreground max-w-none font-light leading-relaxed">
                   <p>{project.challenge}</p>
                 </div>
               </div>
             )}
 
-            <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Strategy</h3>
-              <div className="prose prose-lg text-muted-foreground max-w-none">
+            <div className="flex flex-col gap-10">
+              <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Renovation Strategy</h3>
+              <div className="prose prose-xl text-muted-foreground max-w-none font-light leading-relaxed">
                 <p>
                   {project.strategy || `Our strategic renovation focused on the high-impact areas that drive buyer emotion and maximise sale price.`}
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Scope</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {Array.isArray(project.scope) ? (
-                  project.scope.map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 p-6 bg-muted border border-border rounded-sm">
-                      <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
-                      <span className="font-bold font-heading text-primary">{item}</span>
-                    </div>
-                  ))
-                ) : (
-                  [
-                    { title: "Surface Modernisation", desc: "Full interior paint in architectural white to enhance natural light." },
-                    { title: "Kitchen Refresh", desc: "Resurfaced cabinetry, new stone surfaces, and premium hardware." },
-                    { title: "Flooring Upgrade", desc: "Installation of wide-plank engineered European Oak throughout." },
-                    { title: "Electrical & Lighting", desc: "Modern LED downlight plan and designer pendant installation." }
-                  ].map((item, i) => (
-                    <div key={i} className="flex flex-col gap-3 p-8 bg-muted border border-border rounded-sm">
-                      <h4 className="font-bold font-heading text-primary">{item.title}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                    </div>
-                  ))
-                )}
+            <div className="flex flex-col gap-10">
+              <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Renovation Scope</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-muted border border-muted overflow-hidden">
+                {(Array.isArray(project.scope) ? project.scope : []).map((item, i) => (
+                  <div key={i} className="flex items-center gap-6 p-10 bg-white group hover:bg-muted transition-colors duration-500">
+                    <div className="w-2 h-2 rounded-full bg-secondary shrink-0" />
+                    <span className="text-lg font-bold font-heading text-primary group-hover:text-secondary transition-colors duration-500">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
             {project.projectDuration && (
-              <div className="flex flex-col gap-8">
-                <h3 className="text-3xl font-display font-bold text-primary italic">Project Duration</h3>
-                <div className="prose prose-lg text-muted-foreground max-w-none">
+              <div className="flex flex-col gap-10">
+                <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Project Duration</h3>
+                <div className="prose prose-xl text-muted-foreground max-w-none font-light leading-relaxed italic">
                   <p>{project.projectDuration}</p>
                 </div>
               </div>
             )}
 
             {project.result && (
-              <div className="flex flex-col gap-8">
-                <h3 className="text-3xl font-display font-bold text-primary italic">The Result</h3>
-                <div className="prose prose-lg text-muted-foreground max-w-none">
+              <div className="flex flex-col gap-10">
+                <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">The Result</h3>
+                <div className="prose prose-xl text-muted-foreground max-w-none font-light leading-relaxed">
                   <p>{project.result}</p>
                 </div>
               </div>
             )}
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="sticky top-32 flex flex-col gap-12 bg-primary p-12 text-white shadow-2xl rounded-sm">
-              <div className="flex flex-col gap-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-secondary">Project Statistics</span>
-                <h3 className="text-3xl font-display font-bold italic">Result Summary</h3>
+          <div className="lg:col-span-4">
+            <div className="sticky top-40 flex flex-col gap-16 bg-primary text-white p-16 md:p-20 shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 -translate-y-1/2 translate-x-1/2 blur-[80px] rounded-full" />
+
+              <div className="flex flex-col gap-6 relative z-10">
+                <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-secondary">Financial Outcome</span>
+                <h3 className="text-4xl font-display font-bold italic leading-tight">Project Metrics</h3>
               </div>
 
-              <div className="flex flex-col gap-8">
-                {project.metrics ? (
-                  project.metrics.map((stat, i) => (
-                    <div key={i} className="flex flex-col gap-2">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">{stat.label}</span>
-                      <span className={cn("text-4xl font-display font-bold", stat.highlight ? "text-secondary" : "text-white")}>{stat.value}</span>
+              <div className="flex flex-col gap-12 relative z-10">
+                {(project.metrics || []).map((stat, i) => (
+                  <div key={i} className="flex flex-col gap-4 group/metric">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30 group-hover/metric:text-secondary transition-colors duration-500">{stat.label}</span>
+                    <span className={cn("text-5xl font-display font-bold tracking-tight transition-transform duration-700", stat.highlight ? "text-secondary scale-105 origin-left" : "text-white")}>{stat.value}</span>
+                  </div>
+                ))}
+
+                {project.id === 'berwick-transformation' && (
+                  <div className="pt-12 border-t border-white/10 mt-4">
+                    <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
+                      $355,000
                     </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="flex flex-col gap-2">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Investment ROI</span>
-                      <span className="text-4xl font-display font-bold text-secondary">{project.roi}</span>
+                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Value Increase</div>
+                  </div>
+                )}
+
+                {project.id === 'berwick-refresh' && (
+                  <div className="pt-12 border-t border-white/10 mt-4">
+                    <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
+                      $83,000+
                     </div>
-                    <div className="flex items-start gap-4 text-sm font-semibold text-white/60 italic border-l-2 border-secondary pl-6">
-                      Market-leading presentation and faster sales turnaround achieved through strategic upgrades.
-                    </div>
-                  </>
+                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Additional Value</div>
+                    <p className="text-sm text-white/40 mt-4 font-light italic">Generated from a $38,000 strategic refresh investment.</p>
+                  </div>
                 )}
               </div>
 
-              {project.id === 'berwick-transformation' && (
-                <div className="pt-8 border-t border-white/10">
-                  <div className="text-5xl font-display font-bold text-secondary mb-2 animate-reveal">
-                    $355,000
-                  </div>
-                  <div className="text-xl font-display font-bold">Value Increase</div>
-                </div>
-              )}
-
-              {project.id === 'berwick-refresh' && (
-                <div className="pt-8 border-t border-white/10">
-                  <div className="text-5xl font-display font-bold text-secondary mb-2 animate-reveal">
-                    $83,000
-                  </div>
-                  <div className="text-xl font-display font-bold">Additional Value Achieved</div>
-                  <p className="text-sm text-white/40 mt-2">From a $38,000 investment</p>
-                </div>
-              )}
-
-              <Button asChild className="w-full bg-secondary text-primary font-bold hover:bg-white rounded-none h-14">
-                <Link to="/consultation">Book Similar Project Consultation</Link>
+              <Button asChild className="w-full bg-secondary text-primary font-bold hover:bg-white h-20 text-lg transition-all duration-500 relative z-10 shadow-gold mt-4">
+                <Link to="/consultation">Request Assessment</Link>
               </Button>
             </div>
           </div>

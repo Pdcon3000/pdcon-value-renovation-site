@@ -48,25 +48,27 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-4 group">
           <div className={cn(
-            "w-12 h-12 relative overflow-hidden rounded-sm flex items-center justify-center transition-colors",
-            isScrolled ? "bg-primary" : "bg-white/10 backdrop-blur-md border border-white/20"
+            "w-12 h-12 relative overflow-hidden rounded-none flex items-center justify-center transition-all duration-500",
+            isScrolled ? "bg-primary rotate-[45deg] scale-90" : "bg-white/5 backdrop-blur-md border border-white/10 group-hover:border-secondary/50 group-hover:bg-white/10"
           )}>
-            <Building2 className={cn("w-8 h-8 transition-colors", isScrolled ? "text-white" : "text-secondary")} />
+            <div className={cn(isScrolled && "rotate-[-45deg]")}>
+              <Building2 className={cn("w-7 h-7 transition-colors", isScrolled ? "text-white" : "text-secondary")} />
+            </div>
           </div>
           <div className="flex flex-col">
             <span className={cn(
-              "text-xl font-bold tracking-tight font-heading leading-tight transition-colors",
+              "text-2xl font-display font-bold tracking-tighter transition-colors italic",
               useWhiteText ? "text-white" : "text-primary"
             )}>
               PDCON
             </span>
             <span className={cn(
-              "text-[8px] uppercase tracking-[0.2em] font-medium transition-colors",
+              "text-[9px] uppercase tracking-[0.3em] font-bold transition-colors opacity-60",
               useWhiteText ? "text-secondary" : "text-secondary"
             )}>
-              Perfect Design & Construction
+              Strategic Property Transformation
             </span>
           </div>
         </Link>

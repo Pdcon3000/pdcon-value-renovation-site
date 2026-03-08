@@ -13,62 +13,62 @@ export function ImprovementsPage() {
         description="Targeted cosmetic and structural improvements designed to increase the market value of your Melbourne property."
       />
       {/* Page Header */}
-      <section className="bg-primary pt-48 pb-24 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
+      <section className="bg-primary pt-60 pb-32 relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop" 
             alt="Interior Improvements" 
-            className="w-full h-full object-cover grayscale"
+            className="w-full h-full object-cover brightness-[0.4]"
           />
         </div>
-        <Container className="relative z-10 flex flex-col gap-8 text-center items-center py-0">
-          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Aesthetic Excellence</span>
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight">
-            Property Value <span className="text-gold italic">Improvements</span>
+        <Container className="relative z-10 flex flex-col gap-10 text-center items-center py-0">
+          <span className="text-xs font-bold uppercase tracking-[0.5em] text-secondary">Strategic Presentation</span>
+          <h1 className="text-5xl md:text-8xl font-display font-bold text-white max-w-5xl leading-[1.1] italic">
+            Strategic Property <span className="text-gold underline decoration-secondary/20 underline-offset-[16px]">Optimisation</span>
           </h1>
-          <p className="text-xl text-white/60 max-w-2xl leading-relaxed">
-            Strategic cosmetic upgrades designed to refine your home's presentation, enhance interior flow, and drive a higher market value.
+          <p className="text-2xl text-white/50 max-w-3xl leading-relaxed font-light">
+            Targeted upgrades designed to refine your home's presentation, enhance interior flow, and drive a higher market value for sale.
           </p>
-          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 mt-4">
+          <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-20 px-16 mt-8 transition-all duration-500 shadow-gold">
             <Link to="/consultation">Book Property Strategy</Link>
           </Button>
         </Container>
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-32 bg-white">
-        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div className="relative">
+      <section className="py-40 bg-white">
+        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+          <div className="relative group">
             <img 
               src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" 
               alt="Modern Living" 
-              className="w-full aspect-[4/5] object-cover shadow-2xl rounded-sm"
+              className="w-full aspect-[4/5] object-cover shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] transition-transform duration-1000 group-hover:scale-105"
             />
-            <div className="absolute -top-10 -left-10 bg-secondary p-12 text-primary shadow-2xl animate-reveal">
-              <span className="text-4xl font-display font-bold">100%</span>
-              <p className="text-[10px] font-bold uppercase tracking-widest leading-tight">Cosmetic Focus for <br />Maximum Impact</p>
+            <div className="absolute -top-10 -left-10 bg-secondary p-12 text-primary shadow-2xl animate-reveal border border-secondary">
+              <span className="text-5xl font-display font-bold">100%</span>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] leading-tight mt-2">Strategic Focus for <br />Value Creation</p>
             </div>
           </div>
-          <div className="flex flex-col gap-10">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              Refining Your Home for the <span className="text-gold italic">Modern Market</span>
+          <div className="flex flex-col gap-12">
+            <h2 className="text-5xl md:text-6xl font-display font-bold text-primary leading-tight italic">
+              Refining Your Asset for the <span className="text-gold">Premium Market</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Property improvement is about identifying the friction points in your home's presentation and eliminating them. We focus on the high-visibility elements that transform a "house" into a "home" in the minds of potential buyers.
+            <p className="text-xl text-muted-foreground leading-relaxed font-light">
+              Property improvement is about identifying the friction points in your home's presentation and eliminating them. We focus on the high-visibility elements that transform a "property" into a "premium home" in the minds of potential buyers.
             </p>
-            <div className="flex flex-col gap-8 pt-4">
+            <div className="flex flex-col gap-10 pt-4">
               {[
-                { icon: Palette, title: "Curated Color Palettes", desc: "Expert selection of neutral tones that enhance space and light." },
-                { icon: Layout, title: "Strategic Layout Refinements", desc: "Removing visual clutter and improving the 'flow' between key living zones." },
-                { icon: Sparkles, title: "Premium Hardware & Fixtures", desc: "Small details that signal quality throughout the entire property." }
+                { icon: Palette, title: "Curated Architectural Palettes", desc: "Expert selection of neutral tones that enhance volume, space and light." },
+                { icon: Layout, title: "Strategic Flow Refinements", desc: "Removing visual clutter and improving the connection between key living zones." },
+                { icon: Sparkles, title: "Value-Add Hardware & Fixtures", desc: "Targeted improvements that signal high quality throughout the property." }
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-12 h-12 bg-muted flex items-center justify-center shrink-0 rounded-sm">
-                    <item.icon className="w-6 h-6 text-secondary" />
+                <div key={i} className="flex gap-8 items-start group">
+                  <div className="w-14 h-14 bg-muted flex items-center justify-center shrink-0 border border-border group-hover:border-secondary transition-all duration-500 shadow-sm">
+                    <item.icon className="w-7 h-7 text-secondary" />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h4 className="text-lg font-bold font-heading text-primary">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <h4 className="text-xl font-bold font-heading text-primary italic">{item.title}</h4>
+                    <p className="text-base text-muted-foreground leading-relaxed font-light">{item.desc}</p>
                   </div>
                 </div>
               ))}
