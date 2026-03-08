@@ -81,7 +81,7 @@ export const projects = [
     suburb: 'Devon Meadows',
     type: 'Project Stabilisation',
     roi: 'N/A',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
     description: 'Specialist renovation management to stabilise and complete an unfinished project abandoned by another party at 5 Fisheries Road.',
     overview: 'This project involved a property at 5 Fisheries Road, Devon Meadows, that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
     strategy: 'Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.',
@@ -98,6 +98,13 @@ export const projects = [
       { label: 'Purchase price', value: '$945,000' },
       { label: 'Total renovation costs', value: '$450,000' },
       { label: 'Sale price achieved', value: '$1,455,000', highlight: true }
+    ],
+    gallery: [
+      {
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforeDevonMeadows__4bceea06.jpg?alt=media&token=fe75ccdc-096d-4819-b3c8-9e087ab6be24',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
+        label: 'Project Completion'
+      }
     ]
   },
   {
@@ -106,7 +113,7 @@ export const projects = [
     suburb: 'Beaconsfield',
     type: 'Market Repositioning',
     roi: '210%',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71',
     description: 'Major renovation following an auction purchase, focusing on repositioning the property through a targeted upgrade strategy.',
     overview: 'This project involved a major renovation following an auction purchase. The renovation focused on improving the presentation and repositioning the property in the market through a targeted upgrade strategy.',
     strategy: 'Strategic upgrades to align the property with high-end market expectations after a value-add acquisition.',
@@ -123,6 +130,13 @@ export const projects = [
       { label: 'Purchase price', value: '$570,000' },
       { label: 'Renovation investment', value: '$110,000' },
       { label: 'Sale price achieved', value: '$800,000', highlight: true }
+    ],
+    gallery: [
+      {
+        before: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBeforBeaconsfiledupper__a6826761.jpg?alt=media&token=7593da9a-c960-4d7d-972c-03fd820c8158',
+        after: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterBeaconsfieldUpper__cb2bb43f.jpg?alt=media&token=1492bec1-31d9-4a20-baaa-16d4688d4d71',
+        label: 'External Transformation'
+      }
     ]
   },
   {
