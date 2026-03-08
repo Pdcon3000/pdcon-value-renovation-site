@@ -8,49 +8,60 @@ import { SEO } from '@/components/ui/SEO';
 
 export const projects = [
   {
-    id: 'marisa-crescent',
-    title: '54–56 Marisa Crescent',
+    id: 'berwick-transformation',
+    title: 'Berwick Pre-Sale Renovation Transformation',
     suburb: 'Berwick',
-    type: 'Full Pre-Sale Renovation',
-    roi: '420%',
+    type: 'Strategic Pre-Sale Renovation',
+    roi: '433%',
     image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
-    description: 'Comprehensive modernisation of a 4-bedroom family home to attract high-end buyers in Berwick.'
+    description: 'A comprehensive pre-sale renovation that achieved a record sale price in Berwick despite market uncertainty.',
+    overview: 'This project involved a full strategic renovation of a residential property located in Berwick, Victoria. The property had strong underlying value but required significant improvements to meet modern buyer expectations and maximise its market potential. The goal was to deliver a comprehensive renovation that would reposition the property in the market and significantly improve buyer appeal.',
+    challenge: 'The renovation took place during a period of market uncertainty. Interest rate increases had recently reduced buyer confidence and the property market was experiencing a slowdown. This created additional pressure to ensure that the renovation strategy focused on improving presentation, desirability, and perceived value. The challenge was to deliver a renovation that would still achieve a strong market outcome despite these conditions.',
+    strategy: 'The strategy focused on a full presentation transformation designed to modernise the home and align it with buyer expectations in the Berwick market. The renovation prioritised improvements that deliver the highest visual impact and buyer appeal.',
+    scope: [
+      'New flooring throughout the home',
+      'New kitchen installation',
+      'Full renovation of bathroom',
+      'New electrical lighting upgrades',
+      'Landscaping improvements',
+      'External rendering',
+      'Interior presentation upgrades'
+    ],
+    duration: '14 Weeks',
+    result: 'Despite the challenging market conditions and reduced buyer confidence caused by interest rate increases, the final outcome exceeded expectations. The property achieved a significantly stronger sale result than originally anticipated. The transformation demonstrates the impact that strategic pre-sale renovation can have on property presentation and buyer demand.',
+    metrics: [
+      { label: 'Estimated value before renovation', value: '$1,650,000' },
+      { label: 'Renovation investment', value: '$105,000' },
+      { label: 'Sale price achieved', value: '$2,105,000' },
+      { label: 'Value increase', value: '$455,000', highlight: true }
+    ]
   },
   {
-    id: 'berwick-project',
-    title: 'Berwick Renovation Project',
-    suburb: 'Berwick',
-    type: 'Cosmetic Upgrade',
-    roi: '310%',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
-    description: 'Targeted interior improvements focusing on light, volume, and modern flooring.'
-  },
-  {
-    id: 'duffy-court',
-    title: '12 Duffy Court',
-    suburb: 'Berwick',
-    type: 'Bathroom & Kitchen Refresh',
-    roi: '280%',
-    image: 'https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop',
-    description: 'Strategic wet area upgrades to remove dated fixtures and introduce designer aesthetics.'
-  },
-  {
-    id: 'fisheries-road',
-    title: '5 Fisheries Road',
+    id: 'devon-meadows-transformation',
+    title: 'Devon Meadows Property Transformation',
     suburb: 'Devon Meadows',
-    type: 'Full Property Improvement',
+    type: 'Property Improvement Project',
     roi: '350%',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
     description: 'Transforming a rural property with modern coastal finishes to broaden buyer appeal.'
   },
   {
-    id: 'beaconsfield-emerald',
-    title: '65 Beaconsfield Emerald Road',
+    id: 'beaconsfield-upgrade',
+    title: 'Beaconsfield Upper Property Upgrade',
     suburb: 'Beaconsfield Upper',
-    type: 'Architectural Refresh',
+    type: 'Lifestyle Property Presentation Upgrade',
     roi: '390%',
     image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop',
     description: 'Elevating a hilltop residence with premium materials and custom architectural lighting.'
+  },
+  {
+    id: 'berwick-refresh',
+    title: 'Berwick Property Refresh',
+    suburb: 'Berwick',
+    type: 'Cosmetic Upgrade',
+    roi: '310%',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+    description: 'Targeted interior improvements focusing on light, volume, and modern flooring.'
   }
 ];
 

@@ -72,7 +72,7 @@ export function HomePage() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 hover:border-white/40 px-12 py-8 text-lg font-bold rounded-none backdrop-blur-sm transition-all duration-300">
-              <Link to="/projects/marisa-crescent">View Case Study</Link>
+              <Link to="/projects/berwick-transformation">View Case Study</Link>
             </Button>
           </div>
 
@@ -130,7 +130,7 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* 3. FEATURED CASE STUDY: Berwick Property Value Transformation */}
+      {/* 3. FEATURED CASE STUDY: Berwick Property Transformation */}
       <section className="bg-primary text-white py-32 overflow-hidden relative">
         <div className="absolute top-0 left-0 w-full h-1 bg-secondary animate-marquee" />
         <Container clean className="flex flex-col gap-24">
@@ -138,17 +138,19 @@ export function HomePage() {
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-6">
                 <span className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">In-Depth Case Study</span>
-                <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">Berwick Property <br /><span className="text-gold italic">Value Transformation</span></h2>
+                <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">Berwick Property <br /><span className="text-gold italic">Transformation</span></h2>
               </div>
-              <p className="text-xl text-white/60 leading-relaxed max-w-xl">
-                Our strategic renovation of 54–56 Marisa Crescent focused on the high-impact areas that drive buyer emotion. By modernising the kitchen, upgrading lighting, and refining the interior flow, we achieved a result that significantly outperformed the local market.
-              </p>
+              <div className="flex flex-col gap-6 text-xl text-white/60 leading-relaxed max-w-xl">
+                <p>This Berwick property presented an opportunity for a complete pre-sale transformation.</p>
+                <p>The goal of the project was to reposition the home for the market through a full strategic renovation designed to significantly improve buyer appeal.</p>
+                <p>The renovation involved a comprehensive upgrade including a full renovation of the bathroom, improvements across the entire interior of the home, and external landscaping works.</p>
+              </div>
               <div className="grid grid-cols-2 gap-x-12 gap-y-16 py-12 border-y border-white/10 bg-white/5 px-8">
                 {[
-                  { label: "Before renovation value", value: "$1,600,000" },
-                  { label: "Renovation investment", value: "$250,000", highlight: true },
-                  { label: "Sale price", value: "$2,105,000" },
-                  { label: "Value increase", value: "$355,000", highlight: true }
+                  { label: "Estimated value before renovation", value: "$1,650,000" },
+                  { label: "Renovation investment", value: "$105,000", highlight: true },
+                  { label: "Sale price achieved", value: "$2,105,000" },
+                  { label: "Value increase", value: "$455,000", highlight: true }
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col gap-2">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">{stat.label}</span>
@@ -157,12 +159,15 @@ export function HomePage() {
                 ))}
               </div>
               <div className="flex flex-col gap-4">
+                <p className="text-3xl font-display font-bold text-secondary">
+                  $455,000 Value Increase
+                </p>
                 <p className="text-sm text-white/60 italic border-l-2 border-secondary pl-6">
-                  "The transformation wasn't just aesthetic; it was financial. The strategic improvements created multiple competitive bidders, driving the final price far beyond the initial appraisal."
+                  Despite challenging market conditions and interest rate increases, the property achieved a sale result substantially higher than originally anticipated.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-secondary text-primary hover:bg-white font-bold rounded-none h-16 px-12 w-fit mt-4">
-                <Link to="/projects/marisa-crescent">Explore Full Scope</Link>
+                <Link to="/projects/berwick-transformation">Explore Full Scope</Link>
               </Button>
             </div>
             <div className="relative">
@@ -209,19 +214,19 @@ export function HomePage() {
           <div className="grid grid-cols-1 gap-32">
             {[
               {
-                title: "Berwick",
+                title: "Berwick Transformation",
                 subtitle: "Strategic Pre-Sale Renovation",
                 before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop"
               },
               {
-                title: "Devon Meadows",
+                title: "Devon Meadows Transformation",
                 subtitle: "Property Improvement Project",
                 before: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
               },
               {
-                title: "Beaconsfield Upper",
+                title: "Beaconsfield Upper Upgrade",
                 subtitle: "Lifestyle Property Presentation Upgrade",
                 before: "https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop",
                 after: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
@@ -536,22 +541,22 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                id: 'marisa-crescent',
-                title: '54–56 Marisa Crescent',
+                id: 'berwick-transformation',
+                title: 'Berwick Property Transformation',
                 suburb: 'Berwick',
                 image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=2070&auto=format&fit=crop',
                 scope: 'Full Pre-Sale Renovation'
               },
               {
-                id: 'fisheries-road',
-                title: '5 Fisheries Road',
+                id: 'devon-meadows-transformation',
+                title: 'Devon Meadows Property Transformation',
                 suburb: 'Devon Meadows',
                 image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop',
                 scope: 'Property Improvement Project'
               },
               {
-                id: 'beaconsfield-emerald',
-                title: '65 Beaconsfield Emerald Road',
+                id: 'beaconsfield-upgrade',
+                title: 'Beaconsfield Upper Property Upgrade',
                 suburb: 'Beaconsfield Upper',
                 image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop',
                 scope: 'Lifestyle Presentation Upgrade'

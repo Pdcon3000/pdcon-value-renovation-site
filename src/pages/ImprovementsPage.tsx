@@ -124,7 +124,7 @@ export function ImprovementsPage() {
               </div>
             </div>
             <Button asChild variant="outline" className="border-white/20 text-white hover:bg-white/10 rounded-none h-14 w-fit">
-              <Link to="/projects/fisheries-road">View Full Case Study</Link>
+              <Link to="/projects/devon-meadows-transformation">View Full Case Study</Link>
             </Button>
           </div>
           <div className="relative">

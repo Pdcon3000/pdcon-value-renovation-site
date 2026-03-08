@@ -57,7 +57,7 @@ export function ProjectDetailPage() {
             <div className="flex flex-col gap-2">
               <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Renovation Duration</span>
               <div className="flex items-center gap-2 text-2xl font-bold text-primary">
-                <Clock className="w-5 h-5 text-secondary" /> 2–3 Weeks
+                <Clock className="w-5 h-5 text-secondary" /> {project.duration || '2–3 Weeks'}
               </div>
             </div>
             <div className="flex flex-col gap-2">
@@ -94,70 +94,108 @@ export function ProjectDetailPage() {
         <Container clean className="grid grid-cols-1 lg:grid-cols-12 gap-24">
           <div className="lg:col-span-7 flex flex-col gap-16">
             <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary">Property Overview</h3>
+              <h3 className="text-3xl font-display font-bold text-primary italic">Overview</h3>
               <div className="prose prose-lg text-muted-foreground max-w-none">
                 <p>
-                  This project involved a comprehensive strategic renovation focused on increasing the market appeal of a classic family residence. The property had significant structural potential but was held back by dated interior finishes and a layout that felt enclosed.
+                  {project.overview || project.description}
                 </p>
+              </div>
+            </div>
+
+            {project.challenge && (
+              <div className="flex flex-col gap-8">
+                <h3 className="text-3xl font-display font-bold text-primary italic">The Challenge</h3>
+                <div className="prose prose-lg text-muted-foreground max-w-none">
+                  <p>{project.challenge}</p>
+                </div>
+              </div>
+            )}
+
+            <div className="flex flex-col gap-8">
+              <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Strategy</h3>
+              <div className="prose prose-lg text-muted-foreground max-w-none">
                 <p>
-                  Our goal was to create a "move-in ready" experience that would trigger an emotional connection with buyers from the moment they stepped through the front door.
+                  {project.strategy || `Our strategic renovation of ${project.title} focused on the high-impact areas that drive buyer emotion.`}
                 </p>
               </div>
             </div>
 
             <div className="flex flex-col gap-8">
-              <h3 className="text-3xl font-display font-bold text-primary">Renovation Scope</h3>
+              <h3 className="text-3xl font-display font-bold text-primary italic">Renovation Scope</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {[
-                  { title: "Surface Modernisation", desc: "Full interior paint in architectural white to enhance natural light." },
-                  { title: "Kitchen Refresh", desc: "Resurfaced cabinetry, new stone surfaces, and premium hardware." },
-                  { title: "Flooring Upgrade", desc: "Installation of wide-plank engineered European Oak throughout." },
-                  { title: "Electrical & Lighting", desc: "Modern LED downlight plan and designer pendant installation." }
-                ].map((item, i) => (
-                  <div key={i} className="flex flex-col gap-3 p-8 bg-muted border border-border rounded-sm">
-                    <h4 className="font-bold font-heading text-primary">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
+                {Array.isArray(project.scope) ? (
+                  project.scope.map((item, i) => (
+                    <div key={i} className="flex items-center gap-4 p-6 bg-muted border border-border rounded-sm">
+                      <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
+                      <span className="font-bold font-heading text-primary">{item}</span>
+                    </div>
+                  ))
+                ) : (
+                  [
+                    { title: "Surface Modernisation", desc: "Full interior paint in architectural white to enhance natural light." },
+                    { title: "Kitchen Refresh", desc: "Resurfaced cabinetry, new stone surfaces, and premium hardware." },
+                    { title: "Flooring Upgrade", desc: "Installation of wide-plank engineered European Oak throughout." },
+                    { title: "Electrical & Lighting", desc: "Modern LED downlight plan and designer pendant installation." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex flex-col gap-3 p-8 bg-muted border border-border rounded-sm">
+                      <h4 className="font-bold font-heading text-primary">{item.title}</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
+
+            {project.result && (
+              <div className="flex flex-col gap-8">
+                <h3 className="text-3xl font-display font-bold text-primary italic">The Result</h3>
+                <div className="prose prose-lg text-muted-foreground max-w-none">
+                  <p>{project.result}</p>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="lg:col-span-5">
             <div className="sticky top-32 flex flex-col gap-12 bg-primary p-12 text-white shadow-2xl rounded-sm">
               <div className="flex flex-col gap-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-secondary">Strategic Strategy</span>
-                <h3 className="text-3xl font-display font-bold">Value Improvement Strategy</h3>
-                <p className="text-white/60 leading-relaxed">
-                  We identified that the local buyer demographic in {project.suburb} values open-plan living and premium master suites. Our strategy focused 70% of the budget on the kitchen and primary living zones to maximize visual impact.
-                </p>
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary">Project Statistics</span>
+                <h3 className="text-3xl font-display font-bold italic">Result Summary</h3>
               </div>
 
-              <div className="flex flex-col gap-6">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-white/40">Key Improvements</h4>
-                <div className="flex flex-col gap-4">
-                  {[
-                    "Removed dated window treatments to double natural light",
-                    "Modernised the primary bathroom with floor-to-ceiling tiling",
-                    "Updated all cabinet hardware to matte copper finishes",
-                    "Professional landscaping to enhance first impressions"
-                  ].map((text, i) => (
-                    <div key={i} className="flex items-start gap-4 text-sm font-semibold">
-                      <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" /> {text}
+              <div className="flex flex-col gap-8">
+                {project.metrics ? (
+                  project.metrics.map((stat, i) => (
+                    <div key={i} className="flex flex-col gap-2">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">{stat.label}</span>
+                      <span className={cn("text-4xl font-display font-bold", stat.highlight ? "text-secondary" : "text-white")}>{stat.value}</span>
                     </div>
-                  ))}
-                </div>
+                  ))
+                ) : (
+                  <>
+                    <div className="flex flex-col gap-2">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Investment ROI</span>
+                      <span className="text-4xl font-display font-bold text-secondary">{project.roi}</span>
+                    </div>
+                    <div className="flex items-start gap-4 text-sm font-semibold text-white/60 italic border-l-2 border-secondary pl-6">
+                      Market-leading presentation and faster sales turnaround achieved through strategic upgrades.
+                    </div>
+                  </>
+                )}
               </div>
 
-              <div className="flex flex-col gap-6 pt-8 border-t border-white/10">
-                <div className="flex flex-col gap-1">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Expected Impact</span>
-                  <p className="text-lg font-display font-bold">Market-leading presentation and faster sales turnaround.</p>
+              {project.id === 'berwick-transformation' && (
+                <div className="pt-8 border-t border-white/10">
+                  <div className="text-4xl font-display font-bold text-secondary mb-2 animate-reveal">
+                    $455,000
+                  </div>
+                  <div className="text-xl font-display font-bold">Value Increase</div>
                 </div>
-                <Button asChild className="w-full bg-secondary text-primary font-bold hover:bg-white rounded-none h-14">
-                  <Link to="/consultation">Book Similar Project Consultation</Link>
-                </Button>
-              </div>
+              )}
+
+              <Button asChild className="w-full bg-secondary text-primary font-bold hover:bg-white rounded-none h-14">
+                <Link to="/consultation">Book Similar Project Consultation</Link>
+              </Button>
             </div>
           </div>
         </Container>

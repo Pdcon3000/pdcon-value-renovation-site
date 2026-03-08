@@ -103,7 +103,7 @@ export function PreSalePage() {
         <Container className="flex flex-col gap-16">
           <div className="flex flex-col gap-4">
             <span className="text-xs font-bold uppercase tracking-widest text-secondary">The Transformation</span>
-            <h2 className="text-4xl font-display font-bold text-primary">Case Study: Berwick Family Residence</h2>
+            <h2 className="text-4xl font-display font-bold text-primary">Case Study: Berwick Property Transformation</h2>
           </div>
           <BeforeAfterSlider 
             beforeImage="https://images.unsplash.com/photo-1556912177-c54030639a48?q=80&w=2070&auto=format&fit=crop" 
