@@ -70,8 +70,8 @@ export function AgentsPage() {
                   "PDCON transformed our listing in just two weeks. The result was a record sale for the street and an extremely happy vendor."
                 </p>
                 <div className="mt-6 flex flex-col">
-                  <span className="font-bold text-secondary tracking-widest text-[10px] uppercase">Senior Agent</span>
-                  <span className="text-sm font-heading">Ray White Berwick</span>
+                  <span className="font-bold text-secondary tracking-widest text-[10px] uppercase">ROHULLAH</span>
+                  <span className="text-sm font-heading">LJ Hooker - Dandenong | Berwick</span>
                 </div>
               </div>
             </div>
