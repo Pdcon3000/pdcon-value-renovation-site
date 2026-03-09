@@ -11,6 +11,7 @@ import { AgentsPage } from './pages/AgentsPage';
 import { AboutPage } from './pages/AboutPage';
 import { ConsultationPage } from './pages/ConsultationPage';
 import { LegalPage } from './pages/LegalPage';
+import { ShowroomPage } from './pages/ShowroomPage';
 
 // Root Route
 const rootRoute = createRootRoute({
@@ -81,6 +82,12 @@ const consultationRoute = createRoute({
   component: ConsultationPage,
 });
 
+const showroomRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/showroom',
+  component: ShowroomPage,
+});
+
 const privacyRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/privacy',
@@ -105,6 +112,7 @@ const routeTree = rootRoute.addChildren([
   agentsRoute,
   aboutRoute,
   consultationRoute,
+  showroomRoute,
   privacyRoute,
   termsRoute,
 ]);

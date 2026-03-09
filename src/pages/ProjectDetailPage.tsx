@@ -194,7 +194,7 @@ export function ProjectDetailPage() {
                 {project.id === 'berwick-transformation' && (
                   <div className="pt-12 border-t border-white/10 mt-4">
                     <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
-                      $455,000
+                      $355,000
                     </div>
                     <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Value Increase</div>
                   </div>
@@ -217,6 +217,7 @@ export function ProjectDetailPage() {
                     </div>
                     <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Sale Price Achieved</div>
                     <p className="text-sm text-white/40 mt-4 font-light italic">Project stabilised and completed through strategic intervention.</p>
+                    <p className="text-xs text-secondary mt-6 font-bold uppercase tracking-widest leading-relaxed">Lesson: Never over-capitalise and do not renovate based on emotion.</p>
                   </div>
                 )}
               </div>

@@ -13,11 +13,11 @@ export const projects = [
     title: 'Berwick Property Transformation',
     suburb: 'Berwick',
     type: 'Strategic Pre-Sale Renovation',
-    roi: '433%', // $455k increase on $105k investment
+    roi: '142%', // $355k increase on $250k investment
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692',
     description: 'This Berwick property underwent a full strategic pre-sale renovation designed to reposition the home for the market and significantly improve buyer appeal.',
     overview: 'This project involved a full strategic renovation of a residential property in Berwick, Victoria. The home had strong underlying value but required substantial upgrades to align with modern buyer expectations and maximise its market potential.',
-    challenge: 'The project was delivered during a period of market uncertainty. Rising interest rates had reduced buyer confidence and the local property market had slowed. The renovation strategy therefore focused on delivering maximum presentation impact and improving the perceived value of the property.',
+    challenge: 'The renovation strategy focused on delivering maximum presentation impact and improving the perceived value of the property.',
     strategy: 'The renovation strategy focused on improving presentation, functionality and buyer appeal through a complete transformation of the interior and external presentation.',
     scope: [
       'New flooring throughout the home',
@@ -30,12 +30,12 @@ export const projects = [
     ],
     duration: '14 Weeks',
     projectDuration: 'The renovation was completed over a 14-week period including planning, renovation works and final presentation improvements.',
-    result: 'Despite the challenging market conditions, the final result exceeded expectations. The renovation significantly improved the property\'s presentation and market positioning, resulting in a stronger sale outcome than originally anticipated.',
+    result: 'The renovation significantly improved the property\'s presentation and market positioning, resulting in a stronger sale outcome than originally anticipated.',
     metrics: [
-      { label: 'Estimated value before renovation', value: '$1,650,000' },
-      { label: 'Renovation investment', value: '$105,000' },
+      { label: 'Before renovation value', value: '$1,600,000' },
+      { label: 'Renovation investment', value: '$250,000' },
       { label: 'Sale price achieved', value: '$2,105,000' },
-      { label: 'Value increase', value: '$455,000', highlight: true }
+      { label: 'Value increase', value: '$355,000', highlight: true }
     ],
     gallery: [
       {
@@ -53,7 +53,7 @@ export const projects = [
     roi: '218%',
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692',
     description: 'A targeted cosmetic upgrade strategy delivered with a renovation budget of $38,000 to resolve unfinished presentation items.',
-    overview: 'This Berwick property had been renovated approximately three years earlier, however several presentation items remained unfinished. Because of these incomplete improvements the owner struggled to achieve the desired sale result.',
+    overview: 'This Berwick property had several presentation items remaining unfinished. Because of these incomplete improvements the owner struggled to achieve the desired sale result.',
     strategy: 'A targeted cosmetic upgrade strategy was delivered with a renovation budget of $38,000. These relatively small but strategic upgrades significantly improved the property\'s presentation and buyer appeal.',
     scope: [
       'Roof restoration and colour update',
@@ -63,7 +63,7 @@ export const projects = [
     ],
     duration: '3 Weeks',
     projectDuration: 'The cosmetic refresh was completed swiftly to meet the listing timeline.',
-    result: 'The improvements significantly improved the property\'s presentation and buyer appeal, leading to a result that exceeded the previous stalled attempts.',
+    result: 'The improvements significantly improved the property\'s presentation and buyer appeal, leading to a result that exceeded previous attempts.',
     metrics: [
       { label: 'Renovation investment', value: '$38,000' },
       { label: 'Additional value achieved', value: '$83,000+', highlight: true }
@@ -77,7 +77,7 @@ export const projects = [
     type: 'Risk Recovery Renovation',
     roi: 'Stabilised',
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
-    description: 'This project involved a property purchased in an unfinished condition after construction work by another party was abandoned. Sold $1,455,000.',
+    description: 'This project involved a property purchased in an unfinished condition after construction work by another party was abandoned.',
     overview: 'This project involved a property that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
     strategy: 'Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.',
     scope: [
@@ -88,11 +88,10 @@ export const projects = [
     ],
     duration: 'Multi-Phase',
     projectDuration: 'Completion of a stalled project requiring extensive remedial work and project stabilisation.',
-    result: 'Through strategic intervention and careful project management, the property was stabilised, completed, and sold for $1,455,000. Key lesson: Never over-capitalise. Do not renovate based on emotion.',
+    result: 'Through strategic intervention and careful project management, the property was stabilised and completed. Key lesson: Never over-capitalise and do not renovate based on emotion.',
     metrics: [
       { label: 'Purchase price', value: '$945,000' },
-      { label: 'Total renovation and project costs', value: '$450,000' },
-      { label: 'Sale price achieved', value: '$1,455,000', highlight: true }
+      { label: 'Total renovation and project costs', value: '$450,000' }
     ],
     gallery: [
       {
@@ -136,7 +135,7 @@ export const projects = [
   },
   {
     id: 'duffy-court-transformation',
-    title: '12 Duffy Court Visual Transformation',
+    title: 'Duffy Court Visual Transformation',
     suburb: 'Beaconsfield',
     type: 'Visual Transformation',
     roi: 'N/A',
