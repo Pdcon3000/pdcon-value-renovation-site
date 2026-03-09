@@ -106,8 +106,8 @@ export function PreSalePage() {
             <h2 className="text-4xl font-display font-bold text-primary italic">Featured Case Study: Berwick Property Transformation</h2>
           </div>
           <BeforeAfterSlider 
-            beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor54-56Marisa__59a2249e.jpg?alt=media&token=f03e226e-4416-4171-a4b5-827e8d7d9ef3" 
-            afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa__92c30084.jpeg?alt=media&token=3b593630-7c6d-4957-8173-0f735d4b584f" 
+            beforeImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FBefor__99df5e08.jpg?alt=media&token=42512108-8e68-45ec-9c44-59364998797f" 
+            afterImage="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692" 
             beforeLabel="Dated Presentation"
             afterLabel="Architectural Ready"
           />

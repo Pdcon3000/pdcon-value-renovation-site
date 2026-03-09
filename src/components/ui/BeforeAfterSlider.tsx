@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 
 interface BeforeAfterSliderProps {
@@ -20,13 +20,13 @@ export function BeforeAfterSlider({
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleMove = (clientX: number) => {
+  const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
     const { left, width } = containerRef.current.getBoundingClientRect();
     const x = clientX - left;
     const percentage = Math.max(0, Math.min(100, (x / width) * 100));
     setPosition(percentage);
-  };
+  }, []);
 
   const onMouseMove = (e: React.MouseEvent) => {
     if (isDragging) handleMove(e.clientX);
@@ -36,40 +36,46 @@ export function BeforeAfterSlider({
     if (isDragging) handleMove(e.touches[0].clientX);
   };
 
+  // Also allow click (not just drag) to reposition
+  const onClick = (e: React.MouseEvent) => {
+    handleMove(e.clientX);
+  };
+
   return (
     <div 
       ref={containerRef}
       className={cn("relative overflow-hidden cursor-ew-resize select-none h-[400px] lg:h-[600px] group", className)}
-      onMouseDown={() => setIsDragging(true)}
+      onMouseDown={(e) => { setIsDragging(true); handleMove(e.clientX); }}
       onMouseUp={() => setIsDragging(false)}
       onMouseLeave={() => setIsDragging(false)}
       onMouseMove={onMouseMove}
-      onTouchStart={() => setIsDragging(true)}
+      onTouchStart={(e) => { setIsDragging(true); handleMove(e.touches[0].clientX); }}
       onTouchEnd={() => setIsDragging(false)}
       onTouchMove={onTouchMove}
     >
-      {/* After Image (Bottom) */}
+      {/* After Image (Bottom layer) */}
       <img 
         src={afterImage} 
         alt="After Renovation" 
         className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
       />
-      <div className="absolute bottom-6 right-6 px-4 py-2 bg-secondary text-primary border border-secondary text-[10px] uppercase tracking-widest font-bold z-0">
+      <div className="absolute bottom-6 right-6 px-4 py-2 bg-secondary text-primary border border-secondary text-[10px] uppercase tracking-widest font-bold z-[5]">
         {afterLabel}
       </div>
 
-      {/* Before Image (Top) */}
+      {/* Before Image (Top layer, clipped by position) */}
       <div 
         className="absolute inset-0 h-full overflow-hidden border-r-2 border-white shadow-[0_0_20px_rgba(0,0,0,0.3)] z-10"
         style={{ width: `${position}%` }}
       >
-        <div className="absolute inset-0 w-full h-full" style={{ width: containerRef.current?.offsetWidth || '100vw' }}>
-          <img 
-            src={beforeImage} 
-            alt="Before Renovation" 
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
+        <img 
+          src={beforeImage} 
+          alt="Before Renovation" 
+          className="absolute top-0 left-0 h-full object-cover"
+          style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100vw', maxWidth: 'none' }}
+          loading="lazy"
+        />
         <div className="absolute bottom-6 left-6 px-4 py-2 bg-primary text-white border border-white/10 text-[10px] uppercase tracking-widest font-bold whitespace-nowrap">
           {beforeLabel}
         </div>
@@ -80,10 +86,11 @@ export function BeforeAfterSlider({
         className="absolute top-0 bottom-0 z-20 w-1 bg-white cursor-ew-resize flex items-center justify-center shadow-lg"
         style={{ left: `${position}%` }}
       >
-        <div className="w-10 h-10 rounded-full bg-white shadow-xl flex items-center justify-center -ml-5 border border-primary/10">
+        <div className="w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center -ml-6 border-2 border-secondary/50 hover:border-secondary transition-colors">
           <div className="flex gap-1">
-            <div className="w-1 h-3 bg-secondary rounded-full" />
-            <div className="w-1 h-3 bg-secondary rounded-full" />
+            <div className="w-0.5 h-4 bg-secondary rounded-full" />
+            <div className="w-0.5 h-4 bg-secondary rounded-full" />
+            <div className="w-0.5 h-4 bg-secondary rounded-full" />
           </div>
         </div>
       </div>

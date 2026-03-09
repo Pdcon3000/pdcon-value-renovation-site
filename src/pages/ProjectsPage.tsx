@@ -51,7 +51,7 @@ export const projects = [
     suburb: 'Berwick',
     type: 'Cosmetic Upgrade',
     roi: '218%',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop',
+    image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692',
     description: 'A targeted cosmetic upgrade strategy delivered with a renovation budget of $38,000 to resolve unfinished presentation items.',
     overview: 'This Berwick property had been renovated approximately three years earlier, however several presentation items remained unfinished. Because of these incomplete improvements the owner struggled to achieve the desired sale result.',
     strategy: 'A targeted cosmetic upgrade strategy was delivered with a renovation budget of $38,000. These relatively small but strategic upgrades significantly improved the property\'s presentation and buyer appeal.',
@@ -75,9 +75,9 @@ export const projects = [
     title: 'Devon Meadows Property Transformation',
     suburb: 'Devon Meadows',
     type: 'Risk Recovery Renovation',
-    roi: 'N/A',
+    roi: 'Stabilised',
     image: 'https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfterDevonMeadows__827c3949.jpg?alt=media&token=778f3c7b-6ac1-497b-814d-db3966ea1e39',
-    description: 'This project involved a property purchased in an unfinished condition after construction work by another party was abandoned.',
+    description: 'This project involved a property purchased in an unfinished condition after construction work by another party was abandoned. Sold $1,455,000.',
     overview: 'This project involved a property that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.',
     strategy: 'Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.',
     scope: [
@@ -88,11 +88,11 @@ export const projects = [
     ],
     duration: 'Multi-Phase',
     projectDuration: 'Completion of a stalled project requiring extensive remedial work and project stabilisation.',
-    result: 'The project ultimately became over-capitalised, however the renovation strategy prevented a far more severe financial loss. Key lesson: Never over-capitalise. Do not renovate based on emotion.',
+    result: 'Through strategic intervention and careful project management, the property was stabilised, completed, and sold for $1,455,000. Key lesson: Never over-capitalise. Do not renovate based on emotion.',
     metrics: [
       { label: 'Purchase price', value: '$945,000' },
       { label: 'Total renovation and project costs', value: '$450,000' },
-      { label: 'Strategic Outcome', value: 'Loss prevented through intervention', highlight: true }
+      { label: 'Sale price achieved', value: '$1,455,000', highlight: true }
     ],
     gallery: [
       {

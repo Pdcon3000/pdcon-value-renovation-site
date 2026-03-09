@@ -75,7 +75,7 @@ export function ProjectDetailPage() {
       <section className="py-12 bg-white overflow-hidden">
         <Container clean>
           <div className="flex flex-col gap-24">
-            {project.gallery ? (
+            {project.gallery && project.gallery.length > 0 ? (
               project.gallery.map((item, i) => (
                 <div key={i} className="flex flex-col gap-8">
                   <div className="flex flex-col md:flex-row justify-between items-end gap-6">
@@ -95,15 +95,17 @@ export function ProjectDetailPage() {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col md:flex-row justify-between items-end gap-6">
                   <h2 className="text-3xl font-display font-bold text-primary">The Visual Transformation</h2>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Slide to compare before and after</p>
                 </div>
-                <BeforeAfterSlider
-                  beforeImage={project.image.replace('crop', 'crop&brightness=0.6')}
-                  afterImage={project.image}
-                  beforeLabel="Original State"
-                  afterLabel="PDCON Strategic Upgrade"
-                  className="h-[500px] lg:h-[800px] shadow-2xl rounded-sm"
-                />
+                <div className="relative overflow-hidden shadow-2xl rounded-sm">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} - Transformation Result`}
+                    className="w-full aspect-[16/9] object-cover"
+                  />
+                  <div className="absolute bottom-6 right-6 px-4 py-2 bg-secondary text-primary text-[10px] uppercase tracking-widest font-bold">
+                    Completed Transformation
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -210,8 +212,11 @@ export function ProjectDetailPage() {
 
                 {project.id === 'devon-meadows-transformation' && (
                   <div className="pt-12 border-t border-white/10 mt-4">
-                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-secondary italic">Strategic Outcome</div>
-                    <p className="text-xl text-white/80 mt-4 font-light italic">Loss significantly reduced through strategic intervention.</p>
+                    <div className="text-6xl md:text-7xl font-display font-bold text-secondary mb-4 animate-reveal tracking-tighter">
+                      $1,455,000
+                    </div>
+                    <div className="text-2xl font-display font-bold uppercase tracking-[0.2em] text-white/80 italic">Sale Price Achieved</div>
+                    <p className="text-sm text-white/40 mt-4 font-light italic">Project stabilised and completed through strategic intervention.</p>
                   </div>
                 )}
               </div>

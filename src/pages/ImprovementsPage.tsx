@@ -130,8 +130,8 @@ export function ImprovementsPage() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" 
-                alt="Berwick Project" 
+                src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692" 
+                alt="Berwick Property Refresh" 
                 className="w-full h-full object-cover"
               />
             </div>

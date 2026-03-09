@@ -286,9 +286,9 @@ export function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center lg:flex-row-reverse">
               <div className="lg:col-span-7 lg:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                  src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FdWabIcrKixSdwUX9S0tZ3qjwI0M2%2FAfter54-56Marisa3__82a95702.jpeg?alt=media&token=c2699878-809e-4952-a861-38e192c2f692"
                   alt="Berwick Property Refresh"
-                  className="w-full aspect-[16/9] object-cover shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full aspect-[16/9] object-cover shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-muted hover:scale-105 transition-all duration-700"
                 />
               </div>
               <div className="lg:col-span-5 flex flex-col gap-10 lg:order-1 lg:text-right lg:items-end">
@@ -346,7 +346,7 @@ export function HomePage() {
                   <p>This project involved a property that had been purchased in an unfinished condition after construction work by another party was abandoned. The situation presented significant risk to the client.</p>
                   <p>Through specialist renovation management and careful planning the project was stabilised and completed. The experience highlighted that renovation is a specialised discipline requiring foresight, problem-solving and financial discipline.</p>
                   <div className="p-6 bg-primary text-white border-l-2 border-secondary text-base">
-                    Key lesson: Never over-capitalise. Do not renovate based on emotion.
+                    The property was stabilised, completed, and ultimately sold for $1,455,000. Key lesson: Never over-capitalise. Do not renovate based on emotion.
                   </div>
                 </div>
                 
@@ -359,9 +359,13 @@ export function HomePage() {
                     <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Total renovation and project costs</span>
                     <span className="text-2xl font-display font-bold text-primary">$450,000</span>
                   </div>
+                  <div className="flex justify-between items-end border-b border-muted pb-4">
+                    <span className="text-xs uppercase tracking-widest text-muted-foreground font-bold">Sale price achieved</span>
+                    <span className="text-2xl font-display font-bold text-primary">$1,455,000</span>
+                  </div>
                   <div className="flex justify-between items-end pt-4">
                     <span className="text-xs uppercase tracking-widest text-secondary font-bold">Outcome</span>
-                    <span className="text-xl font-display font-bold text-secondary">Loss significantly reduced through strategic intervention.</span>
+                    <span className="text-xl font-display font-bold text-secondary">Project stabilised through strategic intervention</span>
                   </div>
                 </div>
 
